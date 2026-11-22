@@ -85,8 +85,8 @@ The four primary colours plus white, from the Techrity Style Guide V1.0. Black i
 
 | Font | Use Case | Source |
 |------|----------|--------|
-| **Now** | The official typeface for all official writing and marketing assets | Licensed. Font files aren't in this repo yet; see [fonts/](fonts/) |
-| **Poppins** | Working fallback, used across current decks and social designs | [Google Fonts](https://fonts.google.com/specimen/Poppins) |
+| **Now** | The official typeface for brand, print **and web/product UI** | Open source ([SIL OFL 1.1](https://openfontlicense.org), Alfredo Marco Pradil), so it's free to self-host. Files go in [fonts/](fonts/) |
+| **Poppins** | Fallback wherever Now isn't installed; used across current decks and social designs | [Google Fonts](https://fonts.google.com/specimen/Poppins) |
 
 The style guide's hierarchy sets tracking at 0 everywhere, with leading of **Headline 52pt · Subtitle 21pt · Body 12pt**. On 1920 × 1080 slides, body text is 22px and never smaller than 17px.
 
@@ -120,11 +120,24 @@ Their values match Tailwind CSS (blue, green, yellow, orange) and the Material 3
 
 ### UI Type, Grid and Icons
 
-- **Body scale:** 25 · 24 · 22 · 20 · **16 (default)** · 12.8px (`.techrity-ui-paragraph-*`). Headings use Semi-Bold, Bold and Black.
-- **Typeface:** the kit specifies **Now**, but its mock-ups are set in a rounded sans that looks like **Nunito**, so the stack is `Now, Nunito, Poppins` (`--techrity-font-ui`).
+- **Typeface:** **Now**, the same family as the brand (`--techrity-font-sans`: `Now, Poppins, system-ui`).
+
+| Level | Desktop | Mobile (< 744px) | Class |
+|-------|---------|------------------|-------|
+| H1 | 60px | 40px | `.techrity-ui-h1` |
+| H2 | 46px | 32px | `.techrity-ui-h2` |
+| H3 | 32px | 24px | `.techrity-ui-h3` |
+| H4 | 24px | 20px | `.techrity-ui-h4` |
+| H5 | 20px | 18px | `.techrity-ui-h5` |
+| H6 | 16px | 16px | `.techrity-ui-h6` |
+
+  - Headings are Bold by default, with Black (900) for emphasis. The `.techrity-ui-h*` classes switch to the mobile sizes on their own below 744px.
+  - **Weights:** Now has Thin, Light, Regular, Medium, Bold and Black, with **no Semi-Bold**. The kit's Semi-Bold column maps to Medium (500) or Bold (700), and the components use Bold.
+  - Desktop sizes are measured from the 1× kit export and rounded. The mobile scale is a recommendation, because the kit leaves it open.
+- **Body scale:** 25 · 24 · 22 · 20 · **16 (default)** · 12.8px (`.techrity-ui-paragraph-*`). Keep UI text on these steps, so no 14px.
 - **Grid:** an **8-point grid** with **12 columns** (`--techrity-grid-1…8`, 8–64px).
   - Mobile frame: 24px status bar · 48px nav · content · 48px action bar · 38px home indicator.
-  - Breakpoint frames: Desktop, Laptop, Tablet and Mobile.
+  - Breakpoints (the kit's frame widths): Desktop **2048** · Desktop/Laptop **1920** · Laptop **1440** · Tablet **1024** / **744** · Mobile **428**px, recorded as `--techrity-bp-*` for reference.
 - **Radii:** cards 16px, controls 8px, nav actions pill.
 - **Icons:** [Phosphor Icons](https://phosphoricons.com) (MIT). Use the Regular weight, and Fill for selected states.
 
@@ -155,10 +168,15 @@ Their values match Tailwind CSS (blue, green, yellow, orange) and the Material 3
 
 Typed props are in [`techrity-ui.d.ts`](ui-kit/components/techrity-ui.d.ts). Not built yet: the Project Overview modal and the Dashboard Header (see the reference images).
 
-**Known gaps in the kit**
-- It gives no pixel sizes for H1–H6 or widths for the breakpoints.
-- In the yellow palette, tones 90 and 95 have the same value.
-- The inactive tag text (`#85828A`, 2.6:1) fails contrast, so the Tag component uses `neutral-variant-30` instead (6.3:1).
+**Fixes made to the kit**
+- **Missing sizes:** heading sizes and breakpoint widths weren't labelled in the kit, so they're measured from its frames.
+- **Black H1:** the kit draws the Black H1 at H2 size; H1 follows the Semi-Bold and Bold columns.
+- **Duplicate yellow:** yellow 95 duplicated yellow 90, so it's now `#FEFCE8`, the next Tailwind step.
+- **Contrast:** several kit pairs failed WCAG AA, so the components use passing pairs instead.
+  - Inactive tag text `#85828A` (2.6:1) → `neutral-variant-30` (6.3:1)
+  - Active tag text (4.3:1) → `black` (5.3:1)
+  - Outline-button hover, white on lavender (4.0:1) → white on brand purple (9.2:1)
+  - Lavender "Impact:" label (4.0:1) → brand purple
 
 ---
 
@@ -168,6 +186,8 @@ Typed props are in [`techrity-ui.d.ts`](ui-kit/components/techrity-ui.d.ts). Not
 |------|----------|
 | [`design-tokens/techrity.tokens.json`](design-tokens/techrity.tokens.json) | Brand colours (light and purple themes), UI colours and tonal palettes, brand and UI type styles, spacing (including the 8-pt grid) and radius, each with a usage note |
 | [`design-tokens/techrity.css`](design-tokens/techrity.css) | CSS custom properties `--techrity-*`, theme selectors `[data-techrity-theme="light|purple"]`, and type classes `.techrity-*` (including `.techrity-ui-*`) |
+
+Every brand shares the same six semantic roles (`surface`, `ink`, `heading`, `muted`, `accent` and `hairline`) under its own prefix. Token JSON and CSS for all three brands are generated by [`scripts/gen_tokens.py`](scripts/gen_tokens.py) from the Claude Design System exports, so the repo and the design systems stay in step.
 
 ```html
 <link rel="stylesheet" href="design-tokens/techrity.css">
@@ -203,7 +223,8 @@ techrity-brand-system/
 │   └── png/
 │       ├── lockup/              # 1200px wide
 │       └── logomark/            # 64, 128, 256, 512px
-├── fonts/                       # Font notes (Now is licensed; Poppins fallback)
+├── fonts/                       # Font notes (Now is OFL and free to self-host; Poppins fallback)
+├── scripts/                     # gen_tokens.py: builds every brand's tokens JSON + CSS
 ├── design-tokens/               # techrity.tokens.json + techrity.css (--techrity-*)
 ├── ui-kit/components/           # Web UI components: techrity-ui.{js,css,d.ts} + one guide per component
 ├── public/                      # Brand Guidelines V1.0 PDF, palette board, previews/, ui-kit/ references
@@ -216,4 +237,4 @@ techrity-brand-system/
 
 ## License
 
-Code and design tokens (`design-tokens/`, `ui-kit/components/`, `*.css`, `*.js`, `*.tokens.json`) are MIT licensed. Logos, brand marks, guideline PDFs, artwork and photography are © Techrity Innovation Foundation, all rights reserved, and may be used only as their brand guidelines describe. See [LICENSE.md](LICENSE.md).
+Code and design tokens (`design-tokens/`, `ui-kit/components/`, `scripts/`, `*.css`, `*.js`, `*.py`, `*.tokens.json`) are MIT licensed. Logos, brand marks, guideline PDFs, artwork and photography are © Techrity Innovation Foundation, all rights reserved, and may be used only as their brand guidelines describe. See [LICENSE.md](LICENSE.md).

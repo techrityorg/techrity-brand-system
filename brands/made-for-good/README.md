@@ -72,7 +72,7 @@ The social post layout: logo top left, @madeforgood and socials top right, a gri
 
 | File | Contents |
 |------|----------|
-| [`design-tokens/made-for-good.tokens.json`](design-tokens/made-for-good.tokens.json) | Colours with full scales (purple and light themes), Moderniz and Manrope hierarchy, spacing and radius |
+| [`design-tokens/made-for-good.tokens.json`](design-tokens/made-for-good.tokens.json) | Colours with full scales (purple and light themes, including the family-wide `hairline` role), Moderniz and Manrope hierarchy, spacing and radius |
 | [`design-tokens/made-for-good.css`](design-tokens/made-for-good.css) | `--m4g-*` variables, `[data-m4g-theme="purple|light"]`, `.m4g-*` type classes |
 
 ---

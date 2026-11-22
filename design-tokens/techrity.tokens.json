@@ -4,7 +4,7 @@
   "prefix": "techrity",
   "parent": null,
   "name": "Techrity",
-  "version": 2,
+  "version": 3,
   "meta": {
     "source": "canva",
     "brandKit": "Techrity Brand Kit (kAEom0PeZLs)",
@@ -16,7 +16,39 @@
     },
     "synced": "2026-11-22",
     "styleGuide": "Techrity Style Guide V1.0 (Google Drive, 1ZtxLZi8UA4k1TH96CXx5yAuG9pklokZ5)",
-    "uiKit": "Techrity web UI kit (Figma exports uploaded 22 Nov 2026): Color, Typography, Grid System, Grid layouts, Components, Pathway Card, Project overview, Label/View buttons, Dashboard header, Phosphor Icons"
+    "uiKit": "Techrity web UI kit (Figma exports uploaded 22 Nov 2026): Color, Typography, Grid System, Grid layouts, Components, Pathway Card, Project overview, Label/View buttons, Dashboard header, Phosphor Icons",
+    "breakpoints": [
+      {
+        "name": "desktop-xl",
+        "label": "Desktop",
+        "width": 2048
+      },
+      {
+        "name": "desktop",
+        "label": "Desktop / Laptop",
+        "width": 1920
+      },
+      {
+        "name": "laptop",
+        "label": "Laptop",
+        "width": 1440
+      },
+      {
+        "name": "tablet-landscape",
+        "label": "Tablet",
+        "width": 1024
+      },
+      {
+        "name": "tablet",
+        "label": "Tablet",
+        "width": 744
+      },
+      {
+        "name": "mobile",
+        "label": "Mobile",
+        "width": 428
+      }
+    ]
   },
   "color": {
     "themes": [
@@ -290,7 +322,7 @@
       },
       {
         "name": "yellow-95",
-        "value": "#fef9c3",
+        "value": "#fefce8",
         "usage": "Yellow: caution tone 95 (web UI tonal palette; 0 = black, 99 = lightest). Caution states. Note: the source gives tone 95 the same value as tone 90."
       },
       {
@@ -516,15 +548,14 @@
       {
         "name": "neutral-variant-99",
         "value": "#fffbfe",
-        "usage": "Neutral variant tone 99 (web UI tonal palette; 0 = black, 99 = lightest). Secondary text, outlines, tags."
+        "usage": "Neutral variant tone 99 (web UI tonal palette; 0 = black, 99 = lightest). Secondary text, outlines, tags. Same value as neutral-99, as in the Material 3 baseline."
       }
     ]
   },
   "type": {
     "fonts": [],
     "families": {
-      "sans": "Now, Poppins, system-ui, sans-serif",
-      "ui": "Now, Nunito, Poppins, system-ui, sans-serif"
+      "sans": "Now, Poppins, system-ui, sans-serif"
     },
     "groups": [
       {
@@ -628,7 +659,7 @@
       },
       {
         "name": "Web UI: body",
-        "family": "ui",
+        "family": "sans",
         "styles": [
           {
             "name": "ui-paragraph-xl",
@@ -681,32 +712,110 @@
         ]
       },
       {
-        "name": "Web UI: headings",
-        "family": "ui",
+        "name": "Web UI: headings (desktop)",
+        "family": "sans",
         "styles": [
           {
-            "name": "ui-heading-semibold",
-            "fontSize": "24px",
-            "lineHeight": 1.3,
-            "fontWeight": 600,
-            "sample": "Heading 1",
-            "usage": "Headings H1–H6 come in Semi-Bold 600, Bold 700 and Black 900. The UI kit gives no pixel sizes for H1–H6, so 24px is a placeholder."
+            "name": "ui-h1",
+            "fontSize": "60px",
+            "lineHeight": 1.15,
+            "fontWeight": 700,
+            "sample": "Equal access to tech",
+            "usage": "Page hero title. Measured from the 1× UI kit export and rounded. Bold (700) by default; Black (900) for emphasis. The kit also shows a Semi-Bold column, but Now has no 600 weight, so use Medium (500) or Bold."
           },
           {
-            "name": "ui-heading-bold",
+            "name": "ui-h2",
+            "fontSize": "46px",
+            "lineHeight": 1.2,
+            "fontWeight": 700,
+            "sample": "Our Pathways",
+            "usage": "Section title. Measured from the 1× UI kit export and rounded. Bold (700) by default; Black (900) for emphasis. The kit also shows a Semi-Bold column, but Now has no 600 weight, so use Medium (500) or Bold."
+          },
+          {
+            "name": "ui-h3",
+            "fontSize": "32px",
+            "lineHeight": 1.25,
+            "fontWeight": 700,
+            "sample": "Kickstart",
+            "usage": "Block or card-group title. Measured from the 1× UI kit export and rounded. Bold (700) by default; Black (900) for emphasis. The kit also shows a Semi-Bold column, but Now has no 600 weight, so use Medium (500) or Bold."
+          },
+          {
+            "name": "ui-h4",
             "fontSize": "24px",
             "lineHeight": 1.3,
             "fontWeight": 700,
-            "sample": "Heading 1",
-            "usage": "Bold heading weight."
+            "sample": "Techrity Mentorship Program",
+            "usage": "Card title. Measured from the 1× UI kit export and rounded. Bold (700) by default; Black (900) for emphasis. The kit also shows a Semi-Bold column, but Now has no 600 weight, so use Medium (500) or Bold."
           },
           {
-            "name": "ui-heading-black",
+            "name": "ui-h5",
+            "fontSize": "20px",
+            "lineHeight": 1.35,
+            "fontWeight": 700,
+            "sample": "Impact stories",
+            "usage": "Sub-section label. Measured from the 1× UI kit export and rounded. Bold (700) by default; Black (900) for emphasis. The kit also shows a Semi-Bold column, but Now has no 600 weight, so use Medium (500) or Bold."
+          },
+          {
+            "name": "ui-h6",
+            "fontSize": "16px",
+            "lineHeight": 1.4,
+            "fontWeight": 700,
+            "sample": "Opportunity Board",
+            "usage": "Small heading, overline. Measured from the 1× UI kit export and rounded. Bold (700) by default; Black (900) for emphasis. The kit also shows a Semi-Bold column, but Now has no 600 weight, so use Medium (500) or Bold."
+          }
+        ]
+      },
+      {
+        "name": "Web UI: headings (mobile)",
+        "family": "sans",
+        "styles": [
+          {
+            "name": "ui-h1-mobile",
+            "fontSize": "40px",
+            "lineHeight": 1.15,
+            "fontWeight": 700,
+            "sample": "Equal access to tech",
+            "usage": "Below the 744px breakpoint. The kit says headings can be set for mobile but gives no sizes, so this scale is a recommendation."
+          },
+          {
+            "name": "ui-h2-mobile",
+            "fontSize": "32px",
+            "lineHeight": 1.2,
+            "fontWeight": 700,
+            "sample": "Our Pathways",
+            "usage": "Below the 744px breakpoint. The kit says headings can be set for mobile but gives no sizes, so this scale is a recommendation."
+          },
+          {
+            "name": "ui-h3-mobile",
             "fontSize": "24px",
+            "lineHeight": 1.25,
+            "fontWeight": 700,
+            "sample": "Kickstart",
+            "usage": "Below the 744px breakpoint. The kit says headings can be set for mobile but gives no sizes, so this scale is a recommendation."
+          },
+          {
+            "name": "ui-h4-mobile",
+            "fontSize": "20px",
             "lineHeight": 1.3,
-            "fontWeight": 900,
-            "sample": "Heading 1",
-            "usage": "Black heading weight."
+            "fontWeight": 700,
+            "sample": "Techrity Mentorship Program",
+            "usage": "Below the 744px breakpoint. The kit says headings can be set for mobile but gives no sizes, so this scale is a recommendation."
+          },
+          {
+            "name": "ui-h5-mobile",
+            "fontSize": "18px",
+            "lineHeight": 1.35,
+            "fontWeight": 700,
+            "sample": "Impact stories",
+            "usage": "Below the 744px breakpoint. The kit says headings can be set for mobile but gives no sizes, so this scale is a recommendation."
+          },
+          {
+            "name": "ui-h6-mobile",
+            "fontSize": "16px",
+            "lineHeight": 1.4,
+            "fontWeight": 700,
+            "sample": "Opportunity Board",
+            "usage": "Below the 744px breakpoint. The kit says headings can be set for mobile but gives no sizes, so this scale is a recommendation."
           }
         ]
       }

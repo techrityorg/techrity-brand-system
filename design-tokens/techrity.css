@@ -49,7 +49,7 @@
   --techrity-yellow-70: #fde047;
   --techrity-yellow-80: #fef08a;
   --techrity-yellow-90: #fef9c3;
-  --techrity-yellow-95: #fef9c3;
+  --techrity-yellow-95: #fefce8;
   --techrity-yellow-99: #fefce8;
   --techrity-orange-10: #7c2d12;
   --techrity-orange-20: #9a3412;
@@ -108,7 +108,6 @@
 
 :root {
   --techrity-font-sans: Now, Poppins, system-ui, sans-serif;
-  --techrity-font-ui: Now, Nunito, Poppins, system-ui, sans-serif;
   --techrity-space-logo-clear: 16px;
   --techrity-space-edge: 75px;
   --techrity-space-slide-margin: 108px;
@@ -126,6 +125,13 @@
   --techrity-radius-full: 9999px;
   --techrity-radius-card: 16px;
   --techrity-radius-control: 8px;
+  /* Breakpoints (reference values; CSS variables cannot be used inside @media). */
+  --techrity-bp-desktop-xl: 2048px;
+  --techrity-bp-desktop: 1920px;
+  --techrity-bp-laptop: 1440px;
+  --techrity-bp-tablet-landscape: 1024px;
+  --techrity-bp-tablet: 744px;
+  --techrity-bp-mobile: 428px;
 }
 
 .techrity-display { font-family: var(--techrity-font-sans); font-size: 126px; line-height: 1.02; font-weight: 700; }
@@ -138,12 +144,31 @@
 .techrity-print-footer { font-family: var(--techrity-font-sans); font-size: 15px; line-height: 1.4; font-weight: 400; }
 .techrity-print-address { font-family: var(--techrity-font-sans); font-size: 11px; line-height: 1.13; font-weight: 400; }
 .techrity-lockup { font-family: var(--techrity-font-sans); font-size: 30px; line-height: 1.4; font-weight: 700; letter-spacing: 0.175em; }
-.techrity-ui-paragraph-xl { font-family: var(--techrity-font-ui); font-size: 25px; line-height: 1.5; font-weight: 400; }
-.techrity-ui-paragraph-lg { font-family: var(--techrity-font-ui); font-size: 24px; line-height: 1.5; font-weight: 400; }
-.techrity-ui-paragraph-md { font-family: var(--techrity-font-ui); font-size: 22px; line-height: 1.5; font-weight: 400; }
-.techrity-ui-paragraph-md-sm { font-family: var(--techrity-font-ui); font-size: 20px; line-height: 1.5; font-weight: 400; }
-.techrity-ui-paragraph { font-family: var(--techrity-font-ui); font-size: 16px; line-height: 1.6; font-weight: 400; }
-.techrity-ui-paragraph-sm { font-family: var(--techrity-font-ui); font-size: 12.8px; line-height: 1.5; font-weight: 400; }
-.techrity-ui-heading-semibold { font-family: var(--techrity-font-ui); font-size: 24px; line-height: 1.3; font-weight: 600; }
-.techrity-ui-heading-bold { font-family: var(--techrity-font-ui); font-size: 24px; line-height: 1.3; font-weight: 700; }
-.techrity-ui-heading-black { font-family: var(--techrity-font-ui); font-size: 24px; line-height: 1.3; font-weight: 900; }
+.techrity-ui-paragraph-xl { font-family: var(--techrity-font-sans); font-size: 25px; line-height: 1.5; font-weight: 400; }
+.techrity-ui-paragraph-lg { font-family: var(--techrity-font-sans); font-size: 24px; line-height: 1.5; font-weight: 400; }
+.techrity-ui-paragraph-md { font-family: var(--techrity-font-sans); font-size: 22px; line-height: 1.5; font-weight: 400; }
+.techrity-ui-paragraph-md-sm { font-family: var(--techrity-font-sans); font-size: 20px; line-height: 1.5; font-weight: 400; }
+.techrity-ui-paragraph { font-family: var(--techrity-font-sans); font-size: 16px; line-height: 1.6; font-weight: 400; }
+.techrity-ui-paragraph-sm { font-family: var(--techrity-font-sans); font-size: 12.8px; line-height: 1.5; font-weight: 400; }
+.techrity-ui-h1 { font-family: var(--techrity-font-sans); font-size: 60px; line-height: 1.15; font-weight: 700; }
+.techrity-ui-h2 { font-family: var(--techrity-font-sans); font-size: 46px; line-height: 1.2; font-weight: 700; }
+.techrity-ui-h3 { font-family: var(--techrity-font-sans); font-size: 32px; line-height: 1.25; font-weight: 700; }
+.techrity-ui-h4 { font-family: var(--techrity-font-sans); font-size: 24px; line-height: 1.3; font-weight: 700; }
+.techrity-ui-h5 { font-family: var(--techrity-font-sans); font-size: 20px; line-height: 1.35; font-weight: 700; }
+.techrity-ui-h6 { font-family: var(--techrity-font-sans); font-size: 16px; line-height: 1.4; font-weight: 700; }
+.techrity-ui-h1-mobile { font-family: var(--techrity-font-sans); font-size: 40px; line-height: 1.15; font-weight: 700; }
+.techrity-ui-h2-mobile { font-family: var(--techrity-font-sans); font-size: 32px; line-height: 1.2; font-weight: 700; }
+.techrity-ui-h3-mobile { font-family: var(--techrity-font-sans); font-size: 24px; line-height: 1.25; font-weight: 700; }
+.techrity-ui-h4-mobile { font-family: var(--techrity-font-sans); font-size: 20px; line-height: 1.3; font-weight: 700; }
+.techrity-ui-h5-mobile { font-family: var(--techrity-font-sans); font-size: 18px; line-height: 1.35; font-weight: 700; }
+.techrity-ui-h6-mobile { font-family: var(--techrity-font-sans); font-size: 16px; line-height: 1.4; font-weight: 700; }
+
+/* Below the 744px tablet breakpoint, desktop heading classes take the mobile sizes. */
+@media (max-width: 743px) {
+  .techrity-ui-h1 { font-size: 40px; line-height: 1.15; }
+  .techrity-ui-h2 { font-size: 32px; line-height: 1.2; }
+  .techrity-ui-h3 { font-size: 24px; line-height: 1.25; }
+  .techrity-ui-h4 { font-size: 20px; line-height: 1.3; }
+  .techrity-ui-h5 { font-size: 18px; line-height: 1.35; }
+  .techrity-ui-h6 { font-size: 16px; line-height: 1.4; }
+}

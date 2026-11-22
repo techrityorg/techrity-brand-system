@@ -4,7 +4,22 @@
   "prefix": "t4g",
   "parent": "techrity",
   "name": "Tech for Good",
-  "version": 1,
+  "version": 2,
+  "meta": {
+    "source": "canva",
+    "parent": "Techrity design system: https://claude.ai/artifact/6Ytk6HJySWm3C1p881jWZu",
+    "designs": {
+      "T4G Slides.pptx (Tech for Good Conf. 2025, read from previews)": "DAG1YUWKLEc",
+      "Tech For Good social (exact values)": "DAGjujRUgqA",
+      "Invitation to Partner for Tech for Good 4.0 (Techrity letterhead)": "DAGkinpbh9g",
+      "TECHRITY T4G SCREEN AD.png (Drive, lossless, exact)": "1q_LIOfkWk59tnaflhhvDbcDvseQ7xtsZ",
+      "BUILD FOR IMPACT.png (Drive, lossless, exact)": "1s7M7PB59G4vmd1GyP_egZRr3O1WTbx7M"
+    },
+    "synced": "2026-11-22",
+    "driveFolder": "Tech for Good 4.0/ 5th Anniversary for Techrity › Techrity Team T4G Designs",
+    "styleGuide": "Tech for Good Conference 2023 Brand Styleguide V2 (T4G 3.0), uploaded",
+    "history": "TechForGood 2.0 Branding Proposal (Sept 2022, Bright Chinenyeze) superseded by the 2023 styleguide"
+  },
   "color": {
     "themes": [
       {
@@ -42,12 +57,28 @@
         "usage": "Anton headlines such as 'TECH FOR GOOD CONFERENCE 2023'."
       },
       {
+        "name": "muted",
+        "value": {
+          "light": "#616161",
+          "dark": "#bdbdbd"
+        },
+        "usage": "Secondary text: dates, credits, captions (6.2:1 on white, 8.6:1 on t4g-dark). The guide sets all text in #212121 or white, so this neutral fills the gap with no new hue."
+      },
+      {
         "name": "accent",
         "value": {
           "light": "#884bff",
           "dark": "#cca5ff"
         },
         "usage": "Emphasis: Techrity Purple on light (4.7:1), lilac on dark (8.0:1)."
+      },
+      {
+        "name": "hairline",
+        "value": {
+          "light": "#e0e0e0",
+          "dark": "rgba(255,255,255,0.2)"
+        },
+        "usage": "Dividers and card outlines. Decorative only, never text."
       },
       {
         "name": "panther-pink",

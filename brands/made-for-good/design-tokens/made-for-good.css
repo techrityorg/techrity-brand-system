@@ -6,6 +6,7 @@
   --m4g-heading: #ffffff;
   --m4g-muted: #ead4ff;
   --m4g-accent: #ffc719;
+  --m4g-hairline: rgba(255,255,255,0.3);
   --m4g-chip: #9529ff;
   --m4g-deep-purple-100: #d9cfea;
   --m4g-deep-purple-200: #b3a0d5;
@@ -62,6 +63,7 @@
   --m4g-heading: #1a1a1a;
   --m4g-muted: #525252;
   --m4g-accent: #9529ff;
+  --m4g-hairline: #d9cfea;
   --m4g-chip: #9529ff;
 }
 
@@ -73,12 +75,12 @@
   --m4g-radius-swatch: 12px;
 }
 
-.m4g-headline { font-family: var(--m4g-font-display); font-size: 96px; line-height: 1.2; font-weight: 400; }}
-.m4g-sub-headline { font-family: var(--m4g-font-sans); font-size: 48px; line-height: 1.2; font-weight: 500; }}
-.m4g-caption { font-family: var(--m4g-font-sans); font-size: 24px; line-height: 1.2; font-weight: 600; }}
-.m4g-body { font-family: var(--m4g-font-sans); font-size: 16px; line-height: 1.2; font-weight: 400; }}
-.m4g-body-light { font-family: var(--m4g-font-sans); font-size: 16px; line-height: 1.4; font-weight: 300; }}
-.m4g-body-regular { font-family: var(--m4g-font-sans); font-size: 16px; line-height: 1.4; font-weight: 400; }}
-.m4g-heading-medium { font-family: var(--m4g-font-sans); font-size: 24px; line-height: 1.2; font-weight: 500; }}
-.m4g-heading-semibold { font-family: var(--m4g-font-sans); font-size: 24px; line-height: 1.2; font-weight: 600; }}
-.m4g-heading-bold { font-family: var(--m4g-font-sans); font-size: 24px; line-height: 1.2; font-weight: 700; }}
+.m4g-headline { font-family: var(--m4g-font-display); font-size: 96px; line-height: 1.2; font-weight: 400; }
+.m4g-sub-headline { font-family: var(--m4g-font-sans); font-size: 48px; line-height: 1.2; font-weight: 500; }
+.m4g-caption { font-family: var(--m4g-font-sans); font-size: 24px; line-height: 1.2; font-weight: 600; }
+.m4g-body { font-family: var(--m4g-font-sans); font-size: 16px; line-height: 1.2; font-weight: 400; }
+.m4g-body-light { font-family: var(--m4g-font-sans); font-size: 16px; line-height: 1.4; font-weight: 300; }
+.m4g-body-regular { font-family: var(--m4g-font-sans); font-size: 16px; line-height: 1.4; font-weight: 400; }
+.m4g-heading-medium { font-family: var(--m4g-font-sans); font-size: 24px; line-height: 1.2; font-weight: 500; }
+.m4g-heading-semibold { font-family: var(--m4g-font-sans); font-size: 24px; line-height: 1.2; font-weight: 600; }
+.m4g-heading-bold { font-family: var(--m4g-font-sans); font-size: 24px; line-height: 1.2; font-weight: 700; }

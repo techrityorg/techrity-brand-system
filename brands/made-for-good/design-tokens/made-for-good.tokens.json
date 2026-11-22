@@ -4,7 +4,12 @@
   "prefix": "m4g",
   "parent": "techrity",
   "name": "Made For Good",
-  "version": 2,
+  "version": 3,
+  "meta": {
+    "source": "Made For Good Brand Guidelines v1.0 (2025, slides uploaded) + MerchByTechrity's New Brand Identity + Made4Good Messaging",
+    "parent": "Techrity design system: https://claude.ai/artifact/6Ytk6HJySWm3C1p881jWZu",
+    "synced": "2026-11-22"
+  },
   "color": {
     "themes": [
       {
@@ -56,6 +61,14 @@
           "light": "#9529ff"
         },
         "usage": "Emphasis: yellow on deep purple (7.7:1), electric purple on white (5.2:1)."
+      },
+      {
+        "name": "hairline",
+        "value": {
+          "purple": "rgba(255,255,255,0.3)",
+          "light": "#d9cfea"
+        },
+        "usage": "Dividers and the thin lines of the grid patterns (deep-purple-100 on white). Decorative only, never text."
       },
       {
         "name": "chip",

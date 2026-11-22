@@ -83,7 +83,7 @@ T4G Gradients 01–04: lavender waves · violet to peach · lavender to pink · 
 
 | File | Contents |
 |------|----------|
-| [`design-tokens/tech-for-good.tokens.json`](design-tokens/tech-for-good.tokens.json) | Colours (light and dark themes), Anton and Source Code Pro styles, spacing and radius |
+| [`design-tokens/tech-for-good.tokens.json`](design-tokens/tech-for-good.tokens.json) | Colours (light and dark themes, including the family-wide `muted` and `hairline` roles), Anton and Source Code Pro styles, spacing and radius |
 | [`design-tokens/tech-for-good.css`](design-tokens/tech-for-good.css) | `--t4g-*` variables, `[data-t4g-theme="light|dark"]`, `.t4g-*` type classes |
 
 ---
