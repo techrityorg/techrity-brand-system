@@ -1,0 +1,255 @@
+{
+  "$schema-note": "Lists of {name,value,usage}. CSS variables are prefixed --techrity-.",
+  "brand": "Techrity",
+  "prefix": "techrity",
+  "parent": null,
+  "name": "Techrity",
+  "version": 1,
+  "color": {
+    "themes": [
+      {
+        "id": "light",
+        "name": "Light (white ground)"
+      },
+      {
+        "id": "purple",
+        "name": "Purple (brand ground)"
+      }
+    ],
+    "tokens": [
+      {
+        "name": "surface",
+        "value": {
+          "light": "#ffffff",
+          "purple": "#463a93"
+        },
+        "usage": "Page or slide background. Light for reading-heavy pages (reports, letters); purple for covers, section openers and social graphics."
+      },
+      {
+        "name": "ink",
+        "value": {
+          "light": "#323232",
+          "purple": "#ffffff"
+        },
+        "usage": "Body text on surface. #323232 on white is 12.8:1; white on purple is 8.9:1."
+      },
+      {
+        "name": "heading",
+        "value": {
+          "light": "#463a93",
+          "purple": "#ffffff"
+        },
+        "usage": "Headings and the wordmark on surface (8.9:1 both ways)."
+      },
+      {
+        "name": "muted",
+        "value": {
+          "light": "#6275a2",
+          "purple": "#bfbbda"
+        },
+        "usage": "Secondary text: addresses, captions, subtitles. 4.6:1 on white, 4.8:1 on purple."
+      },
+      {
+        "name": "accent",
+        "value": {
+          "light": "#463a93",
+          "purple": "#6dceef"
+        },
+        "usage": "The one highlighted word in a headline (e.g. 'Brand Story', 'HUB'). Sky on purple is 4.9:1; on white the highlight falls back to purple because sky on white is only 1.8:1."
+      },
+      {
+        "name": "hairline",
+        "value": {
+          "light": "#bfbbda",
+          "purple": "rgba(255,255,255,0.4)"
+        },
+        "usage": "Divider rules, e.g. contents-list separators and the rule under a cover title."
+      },
+      {
+        "name": "brand-purple",
+        "value": "#463a93",
+        "usage": "Official primary colour (Style Guide V1.0). Use it for slide grounds, the logo mark, headings and the disc behind icons. White text on it is 8.9:1. Some decks drift to #473d95; use #463a93."
+      },
+      {
+        "name": "brand-sky",
+        "value": "#6dceef",
+        "usage": "Official primary colour (Style Guide V1.0). Use it for banner grounds, highlighted headline words on purple, and contour-line graphics. Purple text on it is 4.9:1 and black text 9.1:1. Never use it as text on white (1.8:1)."
+      },
+      {
+        "name": "brand-lavender",
+        "value": "#8875b6",
+        "usage": "Official primary colour (Style Guide V1.0), used for the lavender logo and soft panels. White text on it is 4.0:1, so use it for text 24px and up only."
+      },
+      {
+        "name": "brand-black",
+        "value": "#231f20",
+        "usage": "Official primary colour (Style Guide V1.0): the wordmark colour on blue, white and grey grounds. 16.3:1 on white."
+      },
+      {
+        "name": "violet",
+        "value": "#736eb1",
+        "usage": "Observed in the letterhead footer panel, not in the style guide. White text on it is 4.6:1."
+      },
+      {
+        "name": "lavender",
+        "value": "#8c87b8",
+        "usage": "Observed in decks, not in the style guide: large subtitles on purple, as on the Year in Review cover. Flag: only 2.6:1 on brand-purple; prefer muted (#bfbbda) or brand-lavender."
+      },
+      {
+        "name": "lavender-tint",
+        "value": "#bfbbda",
+        "usage": "The wave ribbon on white slides (brand-purple at 35% over white) and soft background shapes. Decorative only on white."
+      },
+      {
+        "name": "black",
+        "value": "#000000",
+        "usage": "Letterhead header and footer bands. White text on it."
+      },
+      {
+        "name": "white",
+        "value": "#ffffff",
+        "usage": "Text and marks on purple, violet or black; the white logo on dark grounds."
+      }
+    ]
+  },
+  "type": {
+    "fonts": [],
+    "families": {
+      "sans": "Now, Poppins, system-ui, sans-serif"
+    },
+    "groups": [
+      {
+        "name": "Slides (1920 × 1080)",
+        "family": "sans",
+        "styles": [
+          {
+            "name": "display",
+            "fontSize": "126px",
+            "lineHeight": 1.02,
+            "fontWeight": 700,
+            "sample": "Techrity Innovation Foundation",
+            "usage": "Cover title, up to three lines."
+          },
+          {
+            "name": "title",
+            "fontSize": "94px",
+            "lineHeight": 1.2,
+            "fontWeight": 700,
+            "sample": "Executive Summary",
+            "usage": "Slide headline."
+          },
+          {
+            "name": "subtitle",
+            "fontSize": "78px",
+            "lineHeight": 1.02,
+            "fontWeight": 700,
+            "sample": "Year in Review 2024",
+            "usage": "Line under a cover title, after a hairline rule."
+          },
+          {
+            "name": "body",
+            "fontSize": "22px",
+            "lineHeight": 1.4,
+            "fontWeight": 400,
+            "sample": "Equal access to opportunities in tech for Africans.",
+            "usage": "Slide body copy. Don't go smaller; the decks favour large, readable text."
+          },
+          {
+            "name": "caption",
+            "fontSize": "17px",
+            "lineHeight": 1.4,
+            "fontWeight": 400,
+            "sample": "Team Lead, Techrity Innovation Foundation",
+            "usage": "Names, roles, credits."
+          }
+        ]
+      },
+      {
+        "name": "Print (A4)",
+        "family": "sans",
+        "styles": [
+          {
+            "name": "print-heading",
+            "fontSize": "16px",
+            "lineHeight": 1.4,
+            "fontWeight": 700,
+            "sample": "Acknowledgment and Acceptance",
+            "usage": "Section heading in letters and forms."
+          },
+          {
+            "name": "print-body",
+            "fontSize": "16px",
+            "lineHeight": 1.4,
+            "fontWeight": 400,
+            "sample": "We confirm our acceptance of the terms of this appointment.",
+            "usage": "Letter body."
+          },
+          {
+            "name": "print-footer",
+            "fontSize": "15px",
+            "lineHeight": 1.4,
+            "fontWeight": 400,
+            "sample": "hello@techrity.org",
+            "usage": "Contact block in the letterhead footer, white on black; the tagline uses the same size at weight 700."
+          },
+          {
+            "name": "print-address",
+            "fontSize": "11px",
+            "lineHeight": 1.13,
+            "fontWeight": 400,
+            "sample": "48 Winners Avenue, Off Old OPM, Eneka Link Road, Port Harcourt",
+            "usage": "Address under the letterhead logo, in muted."
+          }
+        ]
+      },
+      {
+        "name": "Lockup",
+        "family": "sans",
+        "styles": [
+          {
+            "name": "lockup",
+            "fontSize": "30px",
+            "lineHeight": 1.4,
+            "fontWeight": 700,
+            "letterSpacing": "0.175em",
+            "sample": "TECHRITY INNOVATION FOUNDATION",
+            "usage": "Full-name lockup beside the mark on banners: all caps, wide tracking, brand-purple on brand-sky."
+          }
+        ]
+      }
+    ]
+  },
+  "spacing": {
+    "tokens": [
+      {
+        "name": "space-logo-clear",
+        "value": "16px",
+        "usage": "Minimum clear space around the logo, from the Style Guide logo grid."
+      },
+      {
+        "name": "space-edge",
+        "value": "75px",
+        "usage": "Logo inset from the top-left corner of a 1920 slide; left margin of an A4 letter."
+      },
+      {
+        "name": "space-slide-margin",
+        "value": "108px",
+        "usage": "Left margin of titles and body text on 1920 slides."
+      }
+    ]
+  },
+  "radius": {
+    "tokens": [
+      {
+        "name": "radius-square",
+        "value": "0px",
+        "usage": "Colour panels, bands and photo crops: the brand's blocks are square-cornered."
+      },
+      {
+        "name": "radius-full",
+        "value": "9999px",
+        "usage": "Circular photo frames and the disc behind icons."
+      }
+    ]
+  }
+}

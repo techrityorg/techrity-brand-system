@@ -1,0 +1,48 @@
+/* Techrity design tokens: generated from techrity.tokens.json. Variables are prefixed --techrity- so parent and child brands never collide. */
+
+:root, [data-techrity-theme="light"] {
+  --techrity-surface: #ffffff;
+  --techrity-ink: #323232;
+  --techrity-heading: #463a93;
+  --techrity-muted: #6275a2;
+  --techrity-accent: #463a93;
+  --techrity-hairline: #bfbbda;
+  --techrity-brand-purple: #463a93;
+  --techrity-brand-sky: #6dceef;
+  --techrity-brand-lavender: #8875b6;
+  --techrity-brand-black: #231f20;
+  --techrity-violet: #736eb1;
+  --techrity-lavender: #8c87b8;
+  --techrity-lavender-tint: #bfbbda;
+  --techrity-black: #000000;
+  --techrity-white: #ffffff;
+}
+
+[data-techrity-theme="purple"] {
+  --techrity-surface: #463a93;
+  --techrity-ink: #ffffff;
+  --techrity-heading: #ffffff;
+  --techrity-muted: #bfbbda;
+  --techrity-accent: #6dceef;
+  --techrity-hairline: rgba(255,255,255,0.4);
+}
+
+:root {
+  --techrity-font-sans: Now, Poppins, system-ui, sans-serif;
+  --techrity-space-logo-clear: 16px;
+  --techrity-space-edge: 75px;
+  --techrity-space-slide-margin: 108px;
+  --techrity-radius-square: 0px;
+  --techrity-radius-full: 9999px;
+}
+
+.techrity-display { font-family: var(--techrity-font-sans); font-size: 126px; line-height: 1.02; font-weight: 700; }}
+.techrity-title { font-family: var(--techrity-font-sans); font-size: 94px; line-height: 1.2; font-weight: 700; }}
+.techrity-subtitle { font-family: var(--techrity-font-sans); font-size: 78px; line-height: 1.02; font-weight: 700; }}
+.techrity-body { font-family: var(--techrity-font-sans); font-size: 22px; line-height: 1.4; font-weight: 400; }}
+.techrity-caption { font-family: var(--techrity-font-sans); font-size: 17px; line-height: 1.4; font-weight: 400; }}
+.techrity-print-heading { font-family: var(--techrity-font-sans); font-size: 16px; line-height: 1.4; font-weight: 700; }}
+.techrity-print-body { font-family: var(--techrity-font-sans); font-size: 16px; line-height: 1.4; font-weight: 400; }}
+.techrity-print-footer { font-family: var(--techrity-font-sans); font-size: 15px; line-height: 1.4; font-weight: 400; }}
+.techrity-print-address { font-family: var(--techrity-font-sans); font-size: 11px; line-height: 1.13; font-weight: 400; }}
+.techrity-lockup { font-family: var(--techrity-font-sans); font-size: 30px; line-height: 1.4; font-weight: 700; letter-spacing: 0.175em; }}

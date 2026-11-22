@@ -1,0 +1,417 @@
+{
+  "$schema-note": "Lists of {name,value,usage}. CSS variables are prefixed --m4g-.",
+  "brand": "Made For Good",
+  "prefix": "m4g",
+  "parent": "techrity",
+  "name": "Made For Good",
+  "version": 2,
+  "color": {
+    "themes": [
+      {
+        "id": "purple",
+        "name": "Deep purple"
+      },
+      {
+        "id": "light",
+        "name": "White"
+      }
+    ],
+    "tokens": [
+      {
+        "name": "surface",
+        "value": {
+          "purple": "#421196",
+          "light": "#ffffff"
+        },
+        "usage": "Ground: deep purple for covers, section openers and statements; white for content pages, as in the guideline."
+      },
+      {
+        "name": "ink",
+        "value": {
+          "purple": "#ffffff",
+          "light": "#1a1a1a"
+        },
+        "usage": "Headlines and body (12.0:1 on purple, 17.4:1 on white)."
+      },
+      {
+        "name": "heading",
+        "value": {
+          "purple": "#ffffff",
+          "light": "#1a1a1a"
+        },
+        "usage": "Moderniz headlines and Manrope section titles."
+      },
+      {
+        "name": "muted",
+        "value": {
+          "purple": "#ead4ff",
+          "light": "#525252"
+        },
+        "usage": "Secondary text: slide numbers, years, descriptions (8.8:1 on purple, 7.8:1 on white)."
+      },
+      {
+        "name": "accent",
+        "value": {
+          "purple": "#ffc719",
+          "light": "#9529ff"
+        },
+        "usage": "Emphasis: yellow on deep purple (7.7:1), electric purple on white (5.2:1)."
+      },
+      {
+        "name": "chip",
+        "value": {
+          "purple": "#9529ff",
+          "light": "#9529ff"
+        },
+        "usage": "Fill of the section-number chip with white numerals (5.2:1)."
+      },
+      {
+        "name": "deep-purple-100",
+        "value": "#d9cfea",
+        "usage": "Deep purple tint/shade 100 from the guideline scale (500 = base #421196)."
+      },
+      {
+        "name": "deep-purple-200",
+        "value": "#b3a0d5",
+        "usage": "Deep purple tint/shade 200 from the guideline scale (500 = base #421196)."
+      },
+      {
+        "name": "deep-purple-300",
+        "value": "#8e70c0",
+        "usage": "Deep purple tint/shade 300 from the guideline scale (500 = base #421196)."
+      },
+      {
+        "name": "deep-purple-400",
+        "value": "#6841ab",
+        "usage": "Deep purple tint/shade 400 from the guideline scale (500 = base #421196)."
+      },
+      {
+        "name": "deep-purple-500",
+        "value": "#421196",
+        "usage": "Made For Good primary (#421196): section grounds, the logo star, the Aa/AB type panels. White text 12.0:1, yellow 7.7:1."
+      },
+      {
+        "name": "deep-purple-600",
+        "value": "#350e78",
+        "usage": "Deep purple tint/shade 600 from the guideline scale (500 = base #421196)."
+      },
+      {
+        "name": "deep-purple-700",
+        "value": "#280a5a",
+        "usage": "Deep purple tint/shade 700 from the guideline scale (500 = base #421196)."
+      },
+      {
+        "name": "deep-purple-800",
+        "value": "#1a073c",
+        "usage": "Deep purple tint/shade 800 from the guideline scale (500 = base #421196)."
+      },
+      {
+        "name": "deep-purple-900",
+        "value": "#0d031e",
+        "usage": "Deep purple tint/shade 900 from the guideline scale (500 = base #421196)."
+      },
+      {
+        "name": "electric-purple-100",
+        "value": "#ead4ff",
+        "usage": "Electric purple tint/shade 100 from the guideline scale (500 = base #9529ff)."
+      },
+      {
+        "name": "electric-purple-200",
+        "value": "#d5a9ff",
+        "usage": "Electric purple tint/shade 200 from the guideline scale (500 = base #9529ff)."
+      },
+      {
+        "name": "electric-purple-300",
+        "value": "#bf7fff",
+        "usage": "Electric purple tint/shade 300 from the guideline scale (500 = base #9529ff)."
+      },
+      {
+        "name": "electric-purple-400",
+        "value": "#aa54ff",
+        "usage": "Electric purple tint/shade 400 from the guideline scale (500 = base #9529ff)."
+      },
+      {
+        "name": "electric-purple-500",
+        "value": "#9529ff",
+        "usage": "Primary accent (#9529ff): section-number chips (4.0, 5.0), the Vision panel, logo backgrounds. White text 5.2:1. On deep-purple it is only 2.3:1, so never use it for text there."
+      },
+      {
+        "name": "electric-purple-600",
+        "value": "#7721cc",
+        "usage": "Electric purple tint/shade 600 from the guideline scale (500 = base #9529ff)."
+      },
+      {
+        "name": "electric-purple-700",
+        "value": "#591999",
+        "usage": "Electric purple tint/shade 700 from the guideline scale (500 = base #9529ff)."
+      },
+      {
+        "name": "electric-purple-800",
+        "value": "#3c1066",
+        "usage": "Electric purple tint/shade 800 from the guideline scale (500 = base #9529ff)."
+      },
+      {
+        "name": "electric-purple-900",
+        "value": "#1e0833",
+        "usage": "Electric purple tint/shade 900 from the guideline scale (500 = base #9529ff)."
+      },
+      {
+        "name": "yellow-100",
+        "value": "#fff4d1",
+        "usage": "Yellow tint/shade 100 from the guideline scale (500 = base #ffc719)."
+      },
+      {
+        "name": "yellow-200",
+        "value": "#ffe9a3",
+        "usage": "Yellow tint/shade 200 from the guideline scale (500 = base #ffc719)."
+      },
+      {
+        "name": "yellow-300",
+        "value": "#ffdd75",
+        "usage": "Yellow tint/shade 300 from the guideline scale (500 = base #ffc719)."
+      },
+      {
+        "name": "yellow-400",
+        "value": "#ffd247",
+        "usage": "Yellow tint/shade 400 from the guideline scale (500 = base #ffc719)."
+      },
+      {
+        "name": "yellow-500",
+        "value": "#ffc719",
+        "usage": "Secondary (#ffc719): merch, logo backgrounds and the story posts. Use black or deep-purple text (13.4:1 and 7.7:1), never white."
+      },
+      {
+        "name": "yellow-600",
+        "value": "#cc9f14",
+        "usage": "Yellow tint/shade 600 from the guideline scale (500 = base #ffc719)."
+      },
+      {
+        "name": "yellow-700",
+        "value": "#99770f",
+        "usage": "Yellow tint/shade 700 from the guideline scale (500 = base #ffc719)."
+      },
+      {
+        "name": "yellow-800",
+        "value": "#66500a",
+        "usage": "Yellow tint/shade 800 from the guideline scale (500 = base #ffc719)."
+      },
+      {
+        "name": "yellow-900",
+        "value": "#332805",
+        "usage": "Yellow tint/shade 900 from the guideline scale (500 = base #ffc719)."
+      },
+      {
+        "name": "red-100",
+        "value": "#ffd1d8",
+        "usage": "Red tint/shade 100 from the guideline scale (500 = base #ff193b)."
+      },
+      {
+        "name": "red-200",
+        "value": "#ffa3b1",
+        "usage": "Red tint/shade 200 from the guideline scale (500 = base #ff193b)."
+      },
+      {
+        "name": "red-300",
+        "value": "#ff7589",
+        "usage": "Red tint/shade 300 from the guideline scale (500 = base #ff193b)."
+      },
+      {
+        "name": "red-400",
+        "value": "#ff4762",
+        "usage": "Red tint/shade 400 from the guideline scale (500 = base #ff193b)."
+      },
+      {
+        "name": "red-500",
+        "value": "#ff193b",
+        "usage": "Secondary (#ff193b): logo backgrounds and posters. White text 3.9:1 (large and bold only); black 5.5:1."
+      },
+      {
+        "name": "red-600",
+        "value": "#cc142f",
+        "usage": "Red tint/shade 600 from the guideline scale (500 = base #ff193b)."
+      },
+      {
+        "name": "red-700",
+        "value": "#990f23",
+        "usage": "Red tint/shade 700 from the guideline scale (500 = base #ff193b)."
+      },
+      {
+        "name": "red-800",
+        "value": "#660a18",
+        "usage": "Red tint/shade 800 from the guideline scale (500 = base #ff193b)."
+      },
+      {
+        "name": "red-900",
+        "value": "#33050c",
+        "usage": "Red tint/shade 900 from the guideline scale (500 = base #ff193b)."
+      },
+      {
+        "name": "crimson-100",
+        "value": "#f1ccd2",
+        "usage": "Crimson tint/shade 100 from the guideline scale (500 = base #b8001c)."
+      },
+      {
+        "name": "crimson-200",
+        "value": "#e399a4",
+        "usage": "Crimson tint/shade 200 from the guideline scale (500 = base #b8001c)."
+      },
+      {
+        "name": "crimson-300",
+        "value": "#d46677",
+        "usage": "Crimson tint/shade 300 from the guideline scale (500 = base #b8001c)."
+      },
+      {
+        "name": "crimson-400",
+        "value": "#c63349",
+        "usage": "Crimson tint/shade 400 from the guideline scale (500 = base #b8001c)."
+      },
+      {
+        "name": "crimson-500",
+        "value": "#b8001c",
+        "usage": "Secondary (#b8001c): logo backgrounds and the deepest accent. White text 6.9:1."
+      },
+      {
+        "name": "crimson-600",
+        "value": "#930016",
+        "usage": "Crimson tint/shade 600 from the guideline scale (500 = base #b8001c)."
+      },
+      {
+        "name": "crimson-700",
+        "value": "#6e0011",
+        "usage": "Crimson tint/shade 700 from the guideline scale (500 = base #b8001c)."
+      },
+      {
+        "name": "crimson-800",
+        "value": "#4a000b",
+        "usage": "Crimson tint/shade 800 from the guideline scale (500 = base #b8001c)."
+      },
+      {
+        "name": "crimson-900",
+        "value": "#250006",
+        "usage": "Crimson tint/shade 900 from the guideline scale (500 = base #b8001c)."
+      },
+      {
+        "name": "logo-ink",
+        "value": "#472e8b",
+        "usage": "Ink of the full-colour logo and star symbol, consistent across every official export (#472e8b). Use it for the logo only; layouts use deep-purple-500."
+      },
+      {
+        "name": "white",
+        "value": "#ffffff",
+        "usage": "Logo lettering, text on purple, red and crimson."
+      }
+    ]
+  },
+  "type": {
+    "fonts": [],
+    "families": {
+      "display": "Moderniz, Manrope, sans-serif",
+      "sans": "Manrope, system-ui, sans-serif"
+    },
+    "groups": [
+      {
+        "name": "Hierarchy",
+        "family": "sans",
+        "styles": [
+          {
+            "name": "headline",
+            "family": "display",
+            "fontSize": "96px",
+            "lineHeight": 1.2,
+            "fontWeight": 400,
+            "sample": "MADE FOR CHANGE.",
+            "usage": "Moderniz, all caps: 96px / 6rem, line height 120%."
+          },
+          {
+            "name": "sub-headline",
+            "fontSize": "48px",
+            "lineHeight": 1.2,
+            "fontWeight": 500,
+            "sample": "Do Good. Be Good.",
+            "usage": "Manrope: 48px / 3rem, line height 120%."
+          },
+          {
+            "name": "caption",
+            "fontSize": "24px",
+            "lineHeight": 1.2,
+            "fontWeight": 600,
+            "sample": "Celebrating the journey of African tech professionals",
+            "usage": "Manrope: 24px / 1.5rem, line height 120%."
+          },
+          {
+            "name": "body",
+            "fontSize": "16px",
+            "lineHeight": 1.2,
+            "fontWeight": 400,
+            "sample": "Every purchase powers mentorship, data support and laptops for aspiring techies.",
+            "usage": "Manrope: 16px, line height 120%. The guideline labels this 1.5rem, but 16px is 1rem."
+          }
+        ]
+      },
+      {
+        "name": "Manrope weights",
+        "family": "sans",
+        "styles": [
+          {
+            "name": "body-light",
+            "fontSize": "16px",
+            "lineHeight": 1.4,
+            "fontWeight": 300,
+            "sample": "Light (300): body text"
+          },
+          {
+            "name": "body-regular",
+            "fontSize": "16px",
+            "lineHeight": 1.4,
+            "fontWeight": 400,
+            "sample": "Regular (400): body text"
+          },
+          {
+            "name": "heading-medium",
+            "fontSize": "24px",
+            "lineHeight": 1.2,
+            "fontWeight": 500,
+            "sample": "Medium (500): headings"
+          },
+          {
+            "name": "heading-semibold",
+            "fontSize": "24px",
+            "lineHeight": 1.2,
+            "fontWeight": 600,
+            "sample": "Semi-Bold (600): headings"
+          },
+          {
+            "name": "heading-bold",
+            "fontSize": "24px",
+            "lineHeight": 1.2,
+            "fontWeight": 700,
+            "sample": "Bold (700): headings"
+          }
+        ]
+      }
+    ]
+  },
+  "spacing": {
+    "tokens": [
+      {
+        "name": "space-page-margin",
+        "value": "80px",
+        "usage": "Outer margin of 1920 × 1080 guideline and presentation pages (measured)."
+      }
+    ]
+  },
+  "radius": {
+    "tokens": [
+      {
+        "name": "radius-none",
+        "value": "0px",
+        "usage": "Section-number chips, type panels, colour blocks."
+      },
+      {
+        "name": "radius-swatch",
+        "value": "12px",
+        "usage": "Colour swatch tiles in the palette pages (measured, approximate)."
+      }
+    ]
+  }
+}

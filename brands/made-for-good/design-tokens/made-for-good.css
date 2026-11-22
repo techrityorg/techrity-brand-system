@@ -1,0 +1,84 @@
+/* Made For Good design tokens: generated from made-for-good.tokens.json. Variables are prefixed --m4g- so parent and child brands never collide. */
+
+:root, [data-m4g-theme="purple"] {
+  --m4g-surface: #421196;
+  --m4g-ink: #ffffff;
+  --m4g-heading: #ffffff;
+  --m4g-muted: #ead4ff;
+  --m4g-accent: #ffc719;
+  --m4g-chip: #9529ff;
+  --m4g-deep-purple-100: #d9cfea;
+  --m4g-deep-purple-200: #b3a0d5;
+  --m4g-deep-purple-300: #8e70c0;
+  --m4g-deep-purple-400: #6841ab;
+  --m4g-deep-purple-500: #421196;
+  --m4g-deep-purple-600: #350e78;
+  --m4g-deep-purple-700: #280a5a;
+  --m4g-deep-purple-800: #1a073c;
+  --m4g-deep-purple-900: #0d031e;
+  --m4g-electric-purple-100: #ead4ff;
+  --m4g-electric-purple-200: #d5a9ff;
+  --m4g-electric-purple-300: #bf7fff;
+  --m4g-electric-purple-400: #aa54ff;
+  --m4g-electric-purple-500: #9529ff;
+  --m4g-electric-purple-600: #7721cc;
+  --m4g-electric-purple-700: #591999;
+  --m4g-electric-purple-800: #3c1066;
+  --m4g-electric-purple-900: #1e0833;
+  --m4g-yellow-100: #fff4d1;
+  --m4g-yellow-200: #ffe9a3;
+  --m4g-yellow-300: #ffdd75;
+  --m4g-yellow-400: #ffd247;
+  --m4g-yellow-500: #ffc719;
+  --m4g-yellow-600: #cc9f14;
+  --m4g-yellow-700: #99770f;
+  --m4g-yellow-800: #66500a;
+  --m4g-yellow-900: #332805;
+  --m4g-red-100: #ffd1d8;
+  --m4g-red-200: #ffa3b1;
+  --m4g-red-300: #ff7589;
+  --m4g-red-400: #ff4762;
+  --m4g-red-500: #ff193b;
+  --m4g-red-600: #cc142f;
+  --m4g-red-700: #990f23;
+  --m4g-red-800: #660a18;
+  --m4g-red-900: #33050c;
+  --m4g-crimson-100: #f1ccd2;
+  --m4g-crimson-200: #e399a4;
+  --m4g-crimson-300: #d46677;
+  --m4g-crimson-400: #c63349;
+  --m4g-crimson-500: #b8001c;
+  --m4g-crimson-600: #930016;
+  --m4g-crimson-700: #6e0011;
+  --m4g-crimson-800: #4a000b;
+  --m4g-crimson-900: #250006;
+  --m4g-logo-ink: #472e8b;
+  --m4g-white: #ffffff;
+}
+
+[data-m4g-theme="light"] {
+  --m4g-surface: #ffffff;
+  --m4g-ink: #1a1a1a;
+  --m4g-heading: #1a1a1a;
+  --m4g-muted: #525252;
+  --m4g-accent: #9529ff;
+  --m4g-chip: #9529ff;
+}
+
+:root {
+  --m4g-font-display: Moderniz, Manrope, sans-serif;
+  --m4g-font-sans: Manrope, system-ui, sans-serif;
+  --m4g-space-page-margin: 80px;
+  --m4g-radius-none: 0px;
+  --m4g-radius-swatch: 12px;
+}
+
+.m4g-headline { font-family: var(--m4g-font-display); font-size: 96px; line-height: 1.2; font-weight: 400; }}
+.m4g-sub-headline { font-family: var(--m4g-font-sans); font-size: 48px; line-height: 1.2; font-weight: 500; }}
+.m4g-caption { font-family: var(--m4g-font-sans); font-size: 24px; line-height: 1.2; font-weight: 600; }}
+.m4g-body { font-family: var(--m4g-font-sans); font-size: 16px; line-height: 1.2; font-weight: 400; }}
+.m4g-body-light { font-family: var(--m4g-font-sans); font-size: 16px; line-height: 1.4; font-weight: 300; }}
+.m4g-body-regular { font-family: var(--m4g-font-sans); font-size: 16px; line-height: 1.4; font-weight: 400; }}
+.m4g-heading-medium { font-family: var(--m4g-font-sans); font-size: 24px; line-height: 1.2; font-weight: 500; }}
+.m4g-heading-semibold { font-family: var(--m4g-font-sans); font-size: 24px; line-height: 1.2; font-weight: 600; }}
+.m4g-heading-bold { font-family: var(--m4g-font-sans); font-size: 24px; line-height: 1.2; font-weight: 700; }}
