@@ -30,7 +30,7 @@ The star stands for "Celestial Bodies That Shine": a beacon of impact, and growt
 | Swatch | Name | Hex | RGB | Use |
 |--------|------|-----|-----|-----|
 | ![#421196](https://placehold.co/40x20/421196/421196.png) | Deep Purple | `#421196` | 66, 17, 150 | Primary: backgrounds, panels. White text 12.0:1, yellow 7.7:1 |
-| ![#9529FF](https://placehold.co/40x20/9529FF/9529FF.png) | Electric Purple | `#9529FF` | 149, 41, 255 | Primary accent: section chips, panels. White text 5.2:1. Never as text on deep purple (2.3:1) |
+| ![#631CFF](https://placehold.co/40x20/631CFF/631CFF.png) | Electric Purple | `#631CFF` | 99, 28, 255 | Primary accent: section chips, panels. White text 6.7:1. Never as text on deep purple (1.8:1) |
 | ![#FFC719](https://placehold.co/40x20/FFC719/FFC719.png) | Yellow | `#FFC719` | 255, 199, 25 | Secondary: merch, calls to action. Black or deep-purple text only |
 | ![#FF193B](https://placehold.co/40x20/FF193B/FF193B.png) | Red | `#FF193B` | 255, 25, 59 | Secondary: posters. White text 3.9:1, so large bold only |
 | ![#B8001C](https://placehold.co/40x20/B8001C/B8001C.png) | Crimson | `#B8001C` | 184, 0, 28 | Secondary. White text 6.9:1 |
@@ -40,7 +40,7 @@ Each core colour has a nine-step scale (100–900, where 500 is the base):
 
 [![M4G Colour Scales](public/M4G_Colour_Scales.png)](public/M4G_Colour_Scales.png)
 
-> The guideline labels the electric purple swatch "#631CFF", but the swatch and the palette sheet both show `#9529FF`, so that's used here.
+> Electric purple follows the guideline's label, `#631CFF`. The swatch drawn in the guideline and the 2025 design exports in [`applications/`](applications/) show a lighter `#9529FF`. Re-export those files with `#631CFF` when they're next edited.
 
 ---
 

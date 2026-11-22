@@ -4,7 +4,7 @@
   "prefix": "m4g",
   "parent": "techrity",
   "name": "Made For Good",
-  "version": 3,
+  "version": 4,
   "meta": {
     "source": "Made For Good Brand Guidelines v1.0 (2025, slides uploaded) + MerchByTechrity's New Brand Identity + Made4Good Messaging",
     "parent": "Techrity design system: https://claude.ai/artifact/6Ytk6HJySWm3C1p881jWZu",
@@ -49,18 +49,18 @@
       {
         "name": "muted",
         "value": {
-          "purple": "#ead4ff",
+          "purple": "#e0d2ff",
           "light": "#525252"
         },
-        "usage": "Secondary text: slide numbers, years, descriptions (8.8:1 on purple, 7.8:1 on white)."
+        "usage": "Secondary text: slide numbers, years, descriptions (8.5:1 on purple, 7.8:1 on white)."
       },
       {
         "name": "accent",
         "value": {
           "purple": "#ffc719",
-          "light": "#9529ff"
+          "light": "#631cff"
         },
-        "usage": "Emphasis: yellow on deep purple (7.7:1), electric purple on white (5.2:1)."
+        "usage": "Emphasis: yellow on deep purple (7.7:1), electric purple on white (6.7:1)."
       },
       {
         "name": "hairline",
@@ -73,10 +73,10 @@
       {
         "name": "chip",
         "value": {
-          "purple": "#9529ff",
-          "light": "#9529ff"
+          "purple": "#631cff",
+          "light": "#631cff"
         },
-        "usage": "Fill of the section-number chip with white numerals (5.2:1)."
+        "usage": "Fill of the section-number chip with white numerals (6.7:1)."
       },
       {
         "name": "deep-purple-100",
@@ -125,48 +125,48 @@
       },
       {
         "name": "electric-purple-100",
-        "value": "#ead4ff",
-        "usage": "Electric purple tint/shade 100 from the guideline scale (500 = base #9529ff)."
+        "value": "#e0d2ff",
+        "usage": "Electric purple tint/shade 100 from the guideline scale (500 = base #631cff, the guideline label)."
       },
       {
         "name": "electric-purple-200",
-        "value": "#d5a9ff",
-        "usage": "Electric purple tint/shade 200 from the guideline scale (500 = base #9529ff)."
+        "value": "#c1a4ff",
+        "usage": "Electric purple tint/shade 200 from the guideline scale (500 = base #631cff, the guideline label)."
       },
       {
         "name": "electric-purple-300",
-        "value": "#bf7fff",
-        "usage": "Electric purple tint/shade 300 from the guideline scale (500 = base #9529ff)."
+        "value": "#a177ff",
+        "usage": "Electric purple tint/shade 300 from the guideline scale (500 = base #631cff, the guideline label)."
       },
       {
         "name": "electric-purple-400",
-        "value": "#aa54ff",
-        "usage": "Electric purple tint/shade 400 from the guideline scale (500 = base #9529ff)."
+        "value": "#8249ff",
+        "usage": "Electric purple tint/shade 400 from the guideline scale (500 = base #631cff, the guideline label)."
       },
       {
         "name": "electric-purple-500",
-        "value": "#9529ff",
-        "usage": "Primary accent (#9529ff): section-number chips (4.0, 5.0), the Vision panel, logo backgrounds. White text 5.2:1. On deep-purple it is only 2.3:1, so never use it for text there."
+        "value": "#631cff",
+        "usage": "Primary accent (#631cff, as labelled in the guideline): section-number chips (4.0, 5.0), the Vision panel, logo backgrounds. White text 6.7:1. On deep-purple it is only 1.8:1, so never use it for text there."
       },
       {
         "name": "electric-purple-600",
-        "value": "#7721cc",
-        "usage": "Electric purple tint/shade 600 from the guideline scale (500 = base #9529ff)."
+        "value": "#4f16cc",
+        "usage": "Electric purple tint/shade 600 from the guideline scale (500 = base #631cff, the guideline label)."
       },
       {
         "name": "electric-purple-700",
-        "value": "#591999",
-        "usage": "Electric purple tint/shade 700 from the guideline scale (500 = base #9529ff)."
+        "value": "#3b1199",
+        "usage": "Electric purple tint/shade 700 from the guideline scale (500 = base #631cff, the guideline label)."
       },
       {
         "name": "electric-purple-800",
-        "value": "#3c1066",
-        "usage": "Electric purple tint/shade 800 from the guideline scale (500 = base #9529ff)."
+        "value": "#280b66",
+        "usage": "Electric purple tint/shade 800 from the guideline scale (500 = base #631cff, the guideline label)."
       },
       {
         "name": "electric-purple-900",
-        "value": "#1e0833",
-        "usage": "Electric purple tint/shade 900 from the guideline scale (500 = base #9529ff)."
+        "value": "#140633",
+        "usage": "Electric purple tint/shade 900 from the guideline scale (500 = base #631cff, the guideline label)."
       },
       {
         "name": "yellow-100",

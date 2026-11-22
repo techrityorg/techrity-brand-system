@@ -4,10 +4,10 @@
   --m4g-surface: #421196;
   --m4g-ink: #ffffff;
   --m4g-heading: #ffffff;
-  --m4g-muted: #ead4ff;
+  --m4g-muted: #e0d2ff;
   --m4g-accent: #ffc719;
   --m4g-hairline: rgba(255,255,255,0.3);
-  --m4g-chip: #9529ff;
+  --m4g-chip: #631cff;
   --m4g-deep-purple-100: #d9cfea;
   --m4g-deep-purple-200: #b3a0d5;
   --m4g-deep-purple-300: #8e70c0;
@@ -17,15 +17,15 @@
   --m4g-deep-purple-700: #280a5a;
   --m4g-deep-purple-800: #1a073c;
   --m4g-deep-purple-900: #0d031e;
-  --m4g-electric-purple-100: #ead4ff;
-  --m4g-electric-purple-200: #d5a9ff;
-  --m4g-electric-purple-300: #bf7fff;
-  --m4g-electric-purple-400: #aa54ff;
-  --m4g-electric-purple-500: #9529ff;
-  --m4g-electric-purple-600: #7721cc;
-  --m4g-electric-purple-700: #591999;
-  --m4g-electric-purple-800: #3c1066;
-  --m4g-electric-purple-900: #1e0833;
+  --m4g-electric-purple-100: #e0d2ff;
+  --m4g-electric-purple-200: #c1a4ff;
+  --m4g-electric-purple-300: #a177ff;
+  --m4g-electric-purple-400: #8249ff;
+  --m4g-electric-purple-500: #631cff;
+  --m4g-electric-purple-600: #4f16cc;
+  --m4g-electric-purple-700: #3b1199;
+  --m4g-electric-purple-800: #280b66;
+  --m4g-electric-purple-900: #140633;
   --m4g-yellow-100: #fff4d1;
   --m4g-yellow-200: #ffe9a3;
   --m4g-yellow-300: #ffdd75;
@@ -62,9 +62,9 @@
   --m4g-ink: #1a1a1a;
   --m4g-heading: #1a1a1a;
   --m4g-muted: #525252;
-  --m4g-accent: #9529ff;
+  --m4g-accent: #631cff;
   --m4g-hairline: #d9cfea;
-  --m4g-chip: #9529ff;
+  --m4g-chip: #631cff;
 }
 
 :root {
