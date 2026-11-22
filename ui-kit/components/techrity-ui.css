@@ -1,0 +1,49 @@
+/* Techrity web UI kit styles. Load design-tokens/techrity.css first: every value reads a --techrity- variable. */
+.tr-icon { flex: none; }
+.tr-btn { display: inline-flex; align-items: center; gap: var(--techrity-grid-1); font-family: var(--techrity-font-ui); font-size: 16px; font-weight: 600; line-height: 1; padding: 12px 24px; border: 1.5px solid transparent; cursor: pointer; text-decoration: none; transition: background-color .15s, color .15s, border-color .15s; }
+.tr-btn:focus-visible, .tr-tag:focus-visible, .tr-filter:focus-visible, .tr-nav-link:focus-visible, .tr-pathway:focus-visible { outline: 2px solid var(--techrity-blue-40); outline-offset: 2px; }
+.tr-shape-pill { border-radius: 9999px; }
+.tr-shape-rounded { border-radius: var(--techrity-radius-control); }
+.tr-shape-square { border-radius: 0; }
+.tr-btn-primary { background: var(--techrity-ui-cyan); color: var(--techrity-neutral-10); }
+.tr-btn-primary:hover { background: var(--techrity-brand-sky); }
+.tr-btn-outline { background: transparent; color: var(--techrity-neutral-10); border-color: var(--techrity-neutral-10); }
+.tr-btn-outline:hover { background: var(--techrity-brand-lavender); border-color: var(--techrity-brand-lavender); color: var(--techrity-white); }
+.tr-btn-purple { background: var(--techrity-brand-purple); color: var(--techrity-white); }
+.tr-btn-ghost { background: var(--techrity-blue-99); color: var(--techrity-neutral-10); border-radius: var(--techrity-radius-control); }
+.tr-btn-ghost:hover { background: var(--techrity-neutral-variant-95); }
+.tr-btn-link { background: transparent; color: var(--techrity-neutral-30); padding: 12px 0; font-weight: 500; }
+.tr-btn-link:hover { color: var(--techrity-brand-purple); }
+
+.tr-tag { font-family: var(--techrity-font-ui); font-size: 12.8px; letter-spacing: .04em; text-transform: uppercase; padding: 8px 16px; border-radius: var(--techrity-radius-control); border: 0; background: var(--techrity-neutral-variant-90); color: var(--techrity-neutral-variant-30); cursor: pointer; }
+.tr-tag.is-active { background: var(--techrity-brand-lavender); color: var(--techrity-neutral-10); }
+
+.tr-filter { display: inline-flex; align-items: center; justify-content: space-between; gap: var(--techrity-grid-2); min-width: 168px; font-family: var(--techrity-font-ui); font-size: 20px; padding: 8px 16px; border-radius: 9999px; border: 0; background: var(--techrity-white); color: var(--techrity-neutral-30); box-shadow: 0 1px 4px rgba(28,27,31,.12); cursor: pointer; }
+.tr-filter.is-active { background: var(--techrity-ui-cyan); color: var(--techrity-neutral-10); }
+
+.tr-nav { display: flex; align-items: center; gap: var(--techrity-grid-4); font-family: var(--techrity-font-ui); padding: 12px 24px; background: var(--techrity-white); }
+.tr-nav-brand { display: inline-flex; align-items: center; gap: 12px; flex: none; }
+.tr-nav-divider { width: 1px; height: 28px; background: var(--techrity-neutral-80); }
+.tr-nav-links { display: flex; gap: var(--techrity-grid-3); list-style: none; margin: 0 auto; padding: 0; }
+.tr-nav-link { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; font-size: 16px; color: var(--techrity-neutral-20); text-decoration: none; }
+.tr-nav-link:hover, .tr-nav-link.is-active { color: var(--techrity-brand-purple); }
+.tr-nav-actions { display: flex; gap: var(--techrity-grid-2); }
+
+.tr-pathway { display: flex; flex-direction: column; justify-content: space-between; gap: var(--techrity-grid-6); width: 370px; min-height: 176px; box-sizing: border-box; padding: 24px 20px; border-radius: var(--techrity-radius-card); color: var(--techrity-white); text-decoration: none; font-family: var(--techrity-font-ui); transition: background-color .15s; }
+.tr-pathway-gray { background: var(--techrity-ui-gray); }
+.tr-pathway-purple, .tr-pathway:hover { background: var(--techrity-brand-purple); }
+.tr-pathway-top { display: flex; justify-content: space-between; color: var(--techrity-ui-cyan); font-size: 16px; }
+.tr-pathway-title { margin: 0 0 4px; font-size: 24px; font-weight: 600; }
+.tr-pathway-desc { margin: 0; font-size: 16px; line-height: 1.6; }
+
+.tr-story { width: 232px; font-family: var(--techrity-font-ui); color: var(--techrity-neutral-10); }
+.tr-story-programme { margin: 0 0 6px; font-size: 12.8px; color: var(--techrity-neutral-30); }
+.tr-story-img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--techrity-radius-control) var(--techrity-radius-control) 0 0; }
+.tr-story-img-empty { background: linear-gradient(135deg, var(--techrity-brand-purple), var(--techrity-brand-lavender)); }
+.tr-story-quote { margin: 12px 0 8px; font-size: 14px; line-height: 1.55; font-weight: 600; }
+.tr-story-impact { margin: 0 0 8px; font-size: 14px; line-height: 1.55; color: var(--techrity-neutral-30); }
+.tr-story-impact span { color: var(--techrity-brand-lavender); font-weight: 600; }
+.tr-story-author { margin: 0 0 12px; font-size: 12.8px; color: var(--techrity-neutral-30); }
+.tr-story-cta { width: 100%; justify-content: center; font-size: 14px; padding: 10px 16px; }
+
+.tr-row { display: flex; flex-wrap: wrap; gap: var(--techrity-grid-2); align-items: center; padding: var(--techrity-grid-3); }

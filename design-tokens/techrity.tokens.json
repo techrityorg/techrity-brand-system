@@ -4,7 +4,20 @@
   "prefix": "techrity",
   "parent": null,
   "name": "Techrity",
-  "version": 1,
+  "version": 2,
+  "meta": {
+    "source": "canva",
+    "brandKit": "Techrity Brand Kit (kAEom0PeZLs)",
+    "designs": {
+      "TECHRITY banner": "DAGYD4h3p8U",
+      "Techrity Company Profile": "DAGgKBa9b0c",
+      "techrity_letterhead": "DAEmaEhVXig",
+      "Techrity Year in Review": "DAGjrkkonq8"
+    },
+    "synced": "2026-11-22",
+    "styleGuide": "Techrity Style Guide V1.0 (Google Drive, 1ZtxLZi8UA4k1TH96CXx5yAuG9pklokZ5)",
+    "uiKit": "Techrity web UI kit (Figma exports uploaded 22 Nov 2026): Color, Typography, Grid System, Grid layouts, Components, Pathway Card, Project overview, Label/View buttons, Dashboard header, Phosphor Icons"
+  },
   "color": {
     "themes": [
       {
@@ -109,13 +122,409 @@
         "name": "white",
         "value": "#ffffff",
         "usage": "Text and marks on purple, violet or black; the white logo on dark grounds."
+      },
+      {
+        "name": "ui-cyan",
+        "value": "#6ce3fa",
+        "usage": "Web UI action colour: primary buttons (Donate, Sign Up, Apply Now, View Full Story) and the filter pill. Always use dark text on it (neutral-10, 11.4:1); white text is only 1.5:1. A brighter UI version of brand-sky (#6dceef)."
+      },
+      {
+        "name": "ui-gray",
+        "value": "#535252",
+        "usage": "Web UI card fill (the pathway card's default state). White text 7.8:1; ui-cyan numerals 5.2:1."
+      },
+      {
+        "name": "blue-10",
+        "value": "#1e3a8a",
+        "usage": "Blue: action/info tone 10 (web UI tonal palette; 0 = black, 99 = lightest). Links, info states, focus."
+      },
+      {
+        "name": "blue-20",
+        "value": "#1e40af",
+        "usage": "Blue: action/info tone 20 (web UI tonal palette; 0 = black, 99 = lightest). Links, info states, focus."
+      },
+      {
+        "name": "blue-30",
+        "value": "#1d4ed8",
+        "usage": "Blue: action/info tone 30 (web UI tonal palette; 0 = black, 99 = lightest). Links, info states, focus."
+      },
+      {
+        "name": "blue-40",
+        "value": "#2563eb",
+        "usage": "Blue: action/info tone 40 (web UI tonal palette; 0 = black, 99 = lightest). Links, info states, focus. Default action/info colour on white (5.2:1)."
+      },
+      {
+        "name": "blue-50",
+        "value": "#3b82f6",
+        "usage": "Blue: action/info tone 50 (web UI tonal palette; 0 = black, 99 = lightest). Links, info states, focus."
+      },
+      {
+        "name": "blue-60",
+        "value": "#60a5fa",
+        "usage": "Blue: action/info tone 60 (web UI tonal palette; 0 = black, 99 = lightest). Links, info states, focus."
+      },
+      {
+        "name": "blue-70",
+        "value": "#93c5fd",
+        "usage": "Blue: action/info tone 70 (web UI tonal palette; 0 = black, 99 = lightest). Links, info states, focus."
+      },
+      {
+        "name": "blue-80",
+        "value": "#bfdbfe",
+        "usage": "Blue: action/info tone 80 (web UI tonal palette; 0 = black, 99 = lightest). Links, info states, focus."
+      },
+      {
+        "name": "blue-90",
+        "value": "#dbeafe",
+        "usage": "Blue: action/info tone 90 (web UI tonal palette; 0 = black, 99 = lightest). Links, info states, focus."
+      },
+      {
+        "name": "blue-95",
+        "value": "#eff6ff",
+        "usage": "Blue: action/info tone 95 (web UI tonal palette; 0 = black, 99 = lightest). Links, info states, focus."
+      },
+      {
+        "name": "blue-99",
+        "value": "#fafcff",
+        "usage": "Blue: action/info tone 99 (web UI tonal palette; 0 = black, 99 = lightest). Links, info states, focus."
+      },
+      {
+        "name": "green-10",
+        "value": "#14532d",
+        "usage": "Green: success tone 10 (web UI tonal palette; 0 = black, 99 = lightest). Success states."
+      },
+      {
+        "name": "green-20",
+        "value": "#166534",
+        "usage": "Green: success tone 20 (web UI tonal palette; 0 = black, 99 = lightest). Success states."
+      },
+      {
+        "name": "green-30",
+        "value": "#15803d",
+        "usage": "Green: success tone 30 (web UI tonal palette; 0 = black, 99 = lightest). Success states. Success text on white (5.0:1)."
+      },
+      {
+        "name": "green-40",
+        "value": "#19bd56",
+        "usage": "Green: success tone 40 (web UI tonal palette; 0 = black, 99 = lightest). Success states."
+      },
+      {
+        "name": "green-50",
+        "value": "#1dd862",
+        "usage": "Green: success tone 50 (web UI tonal palette; 0 = black, 99 = lightest). Success states."
+      },
+      {
+        "name": "green-60",
+        "value": "#44df7d",
+        "usage": "Green: success tone 60 (web UI tonal palette; 0 = black, 99 = lightest). Success states."
+      },
+      {
+        "name": "green-70",
+        "value": "#78e8a1",
+        "usage": "Green: success tone 70 (web UI tonal palette; 0 = black, 99 = lightest). Success states."
+      },
+      {
+        "name": "green-80",
+        "value": "#93ebb3",
+        "usage": "Green: success tone 80 (web UI tonal palette; 0 = black, 99 = lightest). Success states."
+      },
+      {
+        "name": "green-90",
+        "value": "#aef4c7",
+        "usage": "Green: success tone 90 (web UI tonal palette; 0 = black, 99 = lightest). Success states."
+      },
+      {
+        "name": "green-95",
+        "value": "#dafbe6",
+        "usage": "Green: success tone 95 (web UI tonal palette; 0 = black, 99 = lightest). Success states."
+      },
+      {
+        "name": "green-99",
+        "value": "#f0fdf4",
+        "usage": "Green: success tone 99 (web UI tonal palette; 0 = black, 99 = lightest). Success states."
+      },
+      {
+        "name": "yellow-10",
+        "value": "#713f12",
+        "usage": "Yellow: caution tone 10 (web UI tonal palette; 0 = black, 99 = lightest). Caution states."
+      },
+      {
+        "name": "yellow-20",
+        "value": "#854d0e",
+        "usage": "Yellow: caution tone 20 (web UI tonal palette; 0 = black, 99 = lightest). Caution states."
+      },
+      {
+        "name": "yellow-30",
+        "value": "#a16207",
+        "usage": "Yellow: caution tone 30 (web UI tonal palette; 0 = black, 99 = lightest). Caution states. Caution text on white (4.9:1)."
+      },
+      {
+        "name": "yellow-40",
+        "value": "#ca8a04",
+        "usage": "Yellow: caution tone 40 (web UI tonal palette; 0 = black, 99 = lightest). Caution states."
+      },
+      {
+        "name": "yellow-50",
+        "value": "#eab308",
+        "usage": "Yellow: caution tone 50 (web UI tonal palette; 0 = black, 99 = lightest). Caution states."
+      },
+      {
+        "name": "yellow-60",
+        "value": "#facc15",
+        "usage": "Yellow: caution tone 60 (web UI tonal palette; 0 = black, 99 = lightest). Caution states."
+      },
+      {
+        "name": "yellow-70",
+        "value": "#fde047",
+        "usage": "Yellow: caution tone 70 (web UI tonal palette; 0 = black, 99 = lightest). Caution states."
+      },
+      {
+        "name": "yellow-80",
+        "value": "#fef08a",
+        "usage": "Yellow: caution tone 80 (web UI tonal palette; 0 = black, 99 = lightest). Caution states."
+      },
+      {
+        "name": "yellow-90",
+        "value": "#fef9c3",
+        "usage": "Yellow: caution tone 90 (web UI tonal palette; 0 = black, 99 = lightest). Caution states."
+      },
+      {
+        "name": "yellow-95",
+        "value": "#fef9c3",
+        "usage": "Yellow: caution tone 95 (web UI tonal palette; 0 = black, 99 = lightest). Caution states. Note: the source gives tone 95 the same value as tone 90."
+      },
+      {
+        "name": "yellow-99",
+        "value": "#fefce8",
+        "usage": "Yellow: caution tone 99 (web UI tonal palette; 0 = black, 99 = lightest). Caution states."
+      },
+      {
+        "name": "orange-10",
+        "value": "#7c2d12",
+        "usage": "Orange: warning tone 10 (web UI tonal palette; 0 = black, 99 = lightest). Warning states."
+      },
+      {
+        "name": "orange-20",
+        "value": "#9a3412",
+        "usage": "Orange: warning tone 20 (web UI tonal palette; 0 = black, 99 = lightest). Warning states."
+      },
+      {
+        "name": "orange-30",
+        "value": "#c2410c",
+        "usage": "Orange: warning tone 30 (web UI tonal palette; 0 = black, 99 = lightest). Warning states. Warning text on white (5.2:1)."
+      },
+      {
+        "name": "orange-40",
+        "value": "#ea580c",
+        "usage": "Orange: warning tone 40 (web UI tonal palette; 0 = black, 99 = lightest). Warning states."
+      },
+      {
+        "name": "orange-50",
+        "value": "#f97316",
+        "usage": "Orange: warning tone 50 (web UI tonal palette; 0 = black, 99 = lightest). Warning states."
+      },
+      {
+        "name": "orange-60",
+        "value": "#fb923c",
+        "usage": "Orange: warning tone 60 (web UI tonal palette; 0 = black, 99 = lightest). Warning states."
+      },
+      {
+        "name": "orange-70",
+        "value": "#fdba74",
+        "usage": "Orange: warning tone 70 (web UI tonal palette; 0 = black, 99 = lightest). Warning states."
+      },
+      {
+        "name": "orange-80",
+        "value": "#fed7aa",
+        "usage": "Orange: warning tone 80 (web UI tonal palette; 0 = black, 99 = lightest). Warning states."
+      },
+      {
+        "name": "orange-90",
+        "value": "#ffedd5",
+        "usage": "Orange: warning tone 90 (web UI tonal palette; 0 = black, 99 = lightest). Warning states."
+      },
+      {
+        "name": "orange-95",
+        "value": "#fff2e0",
+        "usage": "Orange: warning tone 95 (web UI tonal palette; 0 = black, 99 = lightest). Warning states."
+      },
+      {
+        "name": "orange-99",
+        "value": "#fff7ed",
+        "usage": "Orange: warning tone 99 (web UI tonal palette; 0 = black, 99 = lightest). Warning states."
+      },
+      {
+        "name": "red-10",
+        "value": "#410e0b",
+        "usage": "Red: error tone 10 (web UI tonal palette; 0 = black, 99 = lightest). Errors, destructive actions."
+      },
+      {
+        "name": "red-20",
+        "value": "#601410",
+        "usage": "Red: error tone 20 (web UI tonal palette; 0 = black, 99 = lightest). Errors, destructive actions."
+      },
+      {
+        "name": "red-30",
+        "value": "#8c1d18",
+        "usage": "Red: error tone 30 (web UI tonal palette; 0 = black, 99 = lightest). Errors, destructive actions."
+      },
+      {
+        "name": "red-40",
+        "value": "#b3261e",
+        "usage": "Red: error tone 40 (web UI tonal palette; 0 = black, 99 = lightest). Errors, destructive actions. Error text on white (6.5:1)."
+      },
+      {
+        "name": "red-50",
+        "value": "#dc362e",
+        "usage": "Red: error tone 50 (web UI tonal palette; 0 = black, 99 = lightest). Errors, destructive actions."
+      },
+      {
+        "name": "red-60",
+        "value": "#e46962",
+        "usage": "Red: error tone 60 (web UI tonal palette; 0 = black, 99 = lightest). Errors, destructive actions."
+      },
+      {
+        "name": "red-70",
+        "value": "#ec928e",
+        "usage": "Red: error tone 70 (web UI tonal palette; 0 = black, 99 = lightest). Errors, destructive actions."
+      },
+      {
+        "name": "red-80",
+        "value": "#f2b8b5",
+        "usage": "Red: error tone 80 (web UI tonal palette; 0 = black, 99 = lightest). Errors, destructive actions."
+      },
+      {
+        "name": "red-90",
+        "value": "#f9dedc",
+        "usage": "Red: error tone 90 (web UI tonal palette; 0 = black, 99 = lightest). Errors, destructive actions."
+      },
+      {
+        "name": "red-95",
+        "value": "#fceeee",
+        "usage": "Red: error tone 95 (web UI tonal palette; 0 = black, 99 = lightest). Errors, destructive actions."
+      },
+      {
+        "name": "red-99",
+        "value": "#fffbf9",
+        "usage": "Red: error tone 99 (web UI tonal palette; 0 = black, 99 = lightest). Errors, destructive actions."
+      },
+      {
+        "name": "neutral-10",
+        "value": "#1c1b1f",
+        "usage": "Neutral tone 10 (web UI tonal palette; 0 = black, 99 = lightest). Text, surfaces, borders. Default UI text (17.1:1 on white)."
+      },
+      {
+        "name": "neutral-20",
+        "value": "#313033",
+        "usage": "Neutral tone 20 (web UI tonal palette; 0 = black, 99 = lightest). Text, surfaces, borders."
+      },
+      {
+        "name": "neutral-30",
+        "value": "#49484c",
+        "usage": "Neutral tone 30 (web UI tonal palette; 0 = black, 99 = lightest). Text, surfaces, borders."
+      },
+      {
+        "name": "neutral-40",
+        "value": "#605d62",
+        "usage": "Neutral tone 40 (web UI tonal palette; 0 = black, 99 = lightest). Text, surfaces, borders."
+      },
+      {
+        "name": "neutral-50",
+        "value": "#787579",
+        "usage": "Neutral tone 50 (web UI tonal palette; 0 = black, 99 = lightest). Text, surfaces, borders."
+      },
+      {
+        "name": "neutral-60",
+        "value": "#939094",
+        "usage": "Neutral tone 60 (web UI tonal palette; 0 = black, 99 = lightest). Text, surfaces, borders."
+      },
+      {
+        "name": "neutral-70",
+        "value": "#aeaaae",
+        "usage": "Neutral tone 70 (web UI tonal palette; 0 = black, 99 = lightest). Text, surfaces, borders."
+      },
+      {
+        "name": "neutral-80",
+        "value": "#c9c5ca",
+        "usage": "Neutral tone 80 (web UI tonal palette; 0 = black, 99 = lightest). Text, surfaces, borders."
+      },
+      {
+        "name": "neutral-90",
+        "value": "#e6e1e5",
+        "usage": "Neutral tone 90 (web UI tonal palette; 0 = black, 99 = lightest). Text, surfaces, borders."
+      },
+      {
+        "name": "neutral-95",
+        "value": "#f4eff4",
+        "usage": "Neutral tone 95 (web UI tonal palette; 0 = black, 99 = lightest). Text, surfaces, borders."
+      },
+      {
+        "name": "neutral-99",
+        "value": "#fffbfe",
+        "usage": "Neutral tone 99 (web UI tonal palette; 0 = black, 99 = lightest). Text, surfaces, borders."
+      },
+      {
+        "name": "neutral-variant-10",
+        "value": "#1d1a22",
+        "usage": "Neutral variant tone 10 (web UI tonal palette; 0 = black, 99 = lightest). Secondary text, outlines, tags."
+      },
+      {
+        "name": "neutral-variant-20",
+        "value": "#322f37",
+        "usage": "Neutral variant tone 20 (web UI tonal palette; 0 = black, 99 = lightest). Secondary text, outlines, tags."
+      },
+      {
+        "name": "neutral-variant-30",
+        "value": "#49454f",
+        "usage": "Neutral variant tone 30 (web UI tonal palette; 0 = black, 99 = lightest). Secondary text, outlines, tags."
+      },
+      {
+        "name": "neutral-variant-40",
+        "value": "#605d66",
+        "usage": "Neutral variant tone 40 (web UI tonal palette; 0 = black, 99 = lightest). Secondary text, outlines, tags."
+      },
+      {
+        "name": "neutral-variant-50",
+        "value": "#79747e",
+        "usage": "Neutral variant tone 50 (web UI tonal palette; 0 = black, 99 = lightest). Secondary text, outlines, tags."
+      },
+      {
+        "name": "neutral-variant-60",
+        "value": "#938f99",
+        "usage": "Neutral variant tone 60 (web UI tonal palette; 0 = black, 99 = lightest). Secondary text, outlines, tags."
+      },
+      {
+        "name": "neutral-variant-70",
+        "value": "#aea9b4",
+        "usage": "Neutral variant tone 70 (web UI tonal palette; 0 = black, 99 = lightest). Secondary text, outlines, tags."
+      },
+      {
+        "name": "neutral-variant-80",
+        "value": "#cac4d0",
+        "usage": "Neutral variant tone 80 (web UI tonal palette; 0 = black, 99 = lightest). Secondary text, outlines, tags."
+      },
+      {
+        "name": "neutral-variant-90",
+        "value": "#e7e0ec",
+        "usage": "Neutral variant tone 90 (web UI tonal palette; 0 = black, 99 = lightest). Secondary text, outlines, tags."
+      },
+      {
+        "name": "neutral-variant-95",
+        "value": "#f5eefa",
+        "usage": "Neutral variant tone 95 (web UI tonal palette; 0 = black, 99 = lightest). Secondary text, outlines, tags."
+      },
+      {
+        "name": "neutral-variant-99",
+        "value": "#fffbfe",
+        "usage": "Neutral variant tone 99 (web UI tonal palette; 0 = black, 99 = lightest). Secondary text, outlines, tags."
       }
     ]
   },
   "type": {
     "fonts": [],
     "families": {
-      "sans": "Now, Poppins, system-ui, sans-serif"
+      "sans": "Now, Poppins, system-ui, sans-serif",
+      "ui": "Now, Nunito, Poppins, system-ui, sans-serif"
     },
     "groups": [
       {
@@ -216,6 +625,90 @@
             "usage": "Full-name lockup beside the mark on banners: all caps, wide tracking, brand-purple on brand-sky."
           }
         ]
+      },
+      {
+        "name": "Web UI: body",
+        "family": "ui",
+        "styles": [
+          {
+            "name": "ui-paragraph-xl",
+            "fontSize": "25px",
+            "lineHeight": 1.5,
+            "fontWeight": 400,
+            "sample": "Every person should have a pathway from exposure to opportunity.",
+            "usage": "Paragraph Large (25px). Weights: Regular 400, Medium 500, Bold 700."
+          },
+          {
+            "name": "ui-paragraph-lg",
+            "fontSize": "24px",
+            "lineHeight": 1.5,
+            "fontWeight": 400,
+            "sample": "Every person should have a pathway from exposure to opportunity.",
+            "usage": "Paragraph Large (24px)."
+          },
+          {
+            "name": "ui-paragraph-md",
+            "fontSize": "22px",
+            "lineHeight": 1.5,
+            "fontWeight": 400,
+            "sample": "Access a laptop, data and foundational support.",
+            "usage": "Paragraph Medium (22px)."
+          },
+          {
+            "name": "ui-paragraph-md-sm",
+            "fontSize": "20px",
+            "lineHeight": 1.5,
+            "fontWeight": 400,
+            "sample": "Access a laptop, data and foundational support.",
+            "usage": "Paragraph Medium (20px)."
+          },
+          {
+            "name": "ui-paragraph",
+            "fontSize": "16px",
+            "lineHeight": 1.6,
+            "fontWeight": 400,
+            "sample": "Coming from a non-traditional background, I struggled to break into tech.",
+            "usage": "Paragraph Regular (16px): the default body size."
+          },
+          {
+            "name": "ui-paragraph-sm",
+            "fontSize": "12.8px",
+            "lineHeight": 1.5,
+            "fontWeight": 400,
+            "sample": "Software Developer (Intels)",
+            "usage": "Paragraph Small (12.8px / 13px): captions, meta, tags."
+          }
+        ]
+      },
+      {
+        "name": "Web UI: headings",
+        "family": "ui",
+        "styles": [
+          {
+            "name": "ui-heading-semibold",
+            "fontSize": "24px",
+            "lineHeight": 1.3,
+            "fontWeight": 600,
+            "sample": "Heading 1",
+            "usage": "Headings H1–H6 come in Semi-Bold 600, Bold 700 and Black 900. The UI kit gives no pixel sizes for H1–H6, so 24px is a placeholder."
+          },
+          {
+            "name": "ui-heading-bold",
+            "fontSize": "24px",
+            "lineHeight": 1.3,
+            "fontWeight": 700,
+            "sample": "Heading 1",
+            "usage": "Bold heading weight."
+          },
+          {
+            "name": "ui-heading-black",
+            "fontSize": "24px",
+            "lineHeight": 1.3,
+            "fontWeight": 900,
+            "sample": "Heading 1",
+            "usage": "Black heading weight."
+          }
+        ]
       }
     ]
   },
@@ -235,6 +728,56 @@
         "name": "space-slide-margin",
         "value": "108px",
         "usage": "Left margin of titles and body text on 1920 slides."
+      },
+      {
+        "name": "grid-1",
+        "value": "8px",
+        "usage": "8-point grid step ×1 (8px). All UI spacing snaps to the 8-point grid (12 columns)."
+      },
+      {
+        "name": "grid-2",
+        "value": "16px",
+        "usage": "8-point grid step ×2 (16px). All UI spacing snaps to the 8-point grid (12 columns)."
+      },
+      {
+        "name": "grid-3",
+        "value": "24px",
+        "usage": "8-point grid step ×3 (24px). All UI spacing snaps to the 8-point grid (12 columns)."
+      },
+      {
+        "name": "grid-4",
+        "value": "32px",
+        "usage": "8-point grid step ×4 (32px). All UI spacing snaps to the 8-point grid (12 columns)."
+      },
+      {
+        "name": "grid-5",
+        "value": "40px",
+        "usage": "8-point grid step ×5 (40px). All UI spacing snaps to the 8-point grid (12 columns)."
+      },
+      {
+        "name": "grid-6",
+        "value": "48px",
+        "usage": "8-point grid step ×6 (48px). All UI spacing snaps to the 8-point grid (12 columns)."
+      },
+      {
+        "name": "grid-8",
+        "value": "64px",
+        "usage": "8-point grid step ×8 (64px). All UI spacing snaps to the 8-point grid (12 columns)."
+      },
+      {
+        "name": "mobile-status-bar",
+        "value": "24px",
+        "usage": "Mobile layout: status bar (time, network, battery)."
+      },
+      {
+        "name": "mobile-nav",
+        "value": "48px",
+        "usage": "Mobile layout: navigation bar, search/secondary nav bar, and bottom tab/action bar."
+      },
+      {
+        "name": "mobile-home-indicator",
+        "value": "38px",
+        "usage": "Mobile layout: home indicator area."
       }
     ]
   },
@@ -249,6 +792,16 @@
         "name": "radius-full",
         "value": "9999px",
         "usage": "Circular photo frames and the disc behind icons."
+      },
+      {
+        "name": "radius-card",
+        "value": "16px",
+        "usage": "Web UI cards (pathway card, project overview, image tops). Measured from the UI kit, so approximate."
+      },
+      {
+        "name": "radius-control",
+        "value": "8px",
+        "usage": "Web UI chips, ghost buttons, the close button area. Measured, so approximate."
       }
     ]
   }

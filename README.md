@@ -92,12 +92,82 @@ The style guide's hierarchy sets tracking at 0 everywhere, with leading of **Hea
 
 ---
 
+## Web & Product UI
+
+Techrity's web UI kit (website, Opportunity Board and dashboards) adds a product layer to the parent brand. It applies to Techrity and to every programme that uses the parent system. Tech for Good and Made For Good keep their own palettes. The Figma exports are in [`public/ui-kit/`](public/ui-kit/).
+
+### UI Colours
+
+| Swatch | Name | Hex | Token | Use |
+|--------|------|-----|-------|-----|
+| ![#6CE3FA](https://placehold.co/40x20/6CE3FA/6CE3FA.png) | UI Cyan | `#6CE3FA` | `--techrity-ui-cyan` | Primary buttons (Donate, Sign Up, Apply Now). Use **dark text only**: `neutral-10` is 11.4:1, while white is 1.5:1 |
+| ![#535252](https://placehold.co/40x20/535252/535252.png) | UI Gray | `#535252` | `--techrity-ui-gray` | Default card fill, with white text (7.8:1) |
+| ![#463A93](https://placehold.co/40x20/463A93/463A93.png) | Brand Purple | `#463A93` | `--techrity-brand-purple` | Active cards and links, and the hover state |
+| ![#8875B6](https://placehold.co/40x20/8875B6/8875B6.png) | Brand Lavender | `#8875B6` | `--techrity-brand-lavender` | Web logo and active filter chips |
+
+UI Cyan is a brighter screen version of Brand Sky (`#6DCEEF`), and the two stay separate tokens.
+
+### Tonal Palettes (UI states only)
+
+[![Tonal palettes](public/ui-kit/Techrity_UI_Tonal_Palettes.png)](public/ui-kit/Techrity_UI_Tonal_Palettes.png)
+
+There are seven palettes in tones 10 to 99 (`--techrity-{blue,green,yellow,orange,red,neutral,neutral-variant}-{10…99}`).
+- **Blue** is for action and info; `blue-40` is also the focus ring.
+- **Green** is for success, **yellow** for caution, **orange** for warning and **red** for errors (`red-40`).
+- **Neutrals** are for text, surfaces and outlines.
+
+Their values match Tailwind CSS (blue, green, yellow, orange) and the Material 3 baseline (red, neutral). Use them for states, never as brand colours.
+
+### UI Type, Grid and Icons
+
+- **Body scale:** 25 · 24 · 22 · 20 · **16 (default)** · 12.8px (`.techrity-ui-paragraph-*`). Headings use Semi-Bold, Bold and Black.
+- **Typeface:** the kit specifies **Now**, but its mock-ups are set in a rounded sans that looks like **Nunito**, so the stack is `Now, Nunito, Poppins` (`--techrity-font-ui`).
+- **Grid:** an **8-point grid** with **12 columns** (`--techrity-grid-1…8`, 8–64px).
+  - Mobile frame: 24px status bar · 48px nav · content · 48px action bar · 38px home indicator.
+  - Breakpoint frames: Desktop, Laptop, Tablet and Mobile.
+- **Radii:** cards 16px, controls 8px, nav actions pill.
+- **Icons:** [Phosphor Icons](https://phosphoricons.com) (MIT). Use the Regular weight, and Fill for selected states.
+
+### Components
+
+[![Rendered components](public/ui-kit/Techrity_UI_Components_Rendered.png)](public/ui-kit/Techrity_UI_Components_Rendered.png)
+
+| Component | Guide | What it is |
+|-----------|-------|------------|
+| Button | [Button.md](ui-kit/components/Button.md) | primary (cyan) · outline · purple · ghost · link, in pill, rounded or square shapes |
+| Tag | [Tag.md](ui-kit/components/Tag.md) | Story and category filter chip |
+| FilterSelect | [FilterSelect.md](ui-kit/components/FilterSelect.md) | "All ▾" dropdown trigger |
+| NavBar | [NavBar.md](ui-kit/components/NavBar.md) | Site header with Shop and Donate, plus an optional T4G co-brand |
+| PathwayCard | [PathwayCard.md](ui-kit/components/PathwayCard.md) | Numbered ecosystem entry-point card |
+| StoryCard | [StoryCard.md](ui-kit/components/StoryCard.md) | Participant story with an Impact line |
+
+```html
+<link rel="stylesheet" href="design-tokens/techrity.css">
+<link rel="stylesheet" href="ui-kit/components/techrity-ui.css">
+<script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="ui-kit/components/techrity-ui.js"></script>
+<script>
+  const h = React.createElement, T = window.Techrity;
+  ReactDOM.createRoot(document.getElementById('app')).render(h(T.Button, { variant: 'primary' }, 'Donate'));
+</script>
+```
+
+Typed props are in [`techrity-ui.d.ts`](ui-kit/components/techrity-ui.d.ts). Not built yet: the Project Overview modal and the Dashboard Header (see the reference images).
+
+**Known gaps in the kit**
+- It gives no pixel sizes for H1–H6 or widths for the breakpoints.
+- In the yellow palette, tones 90 and 95 have the same value.
+- The inactive tag text (`#85828A`, 2.6:1) fails contrast, so the Tag component uses `neutral-variant-30` instead (6.3:1).
+
+---
+
 ## Design Tokens
 
 | File | Contents |
 |------|----------|
-| [`design-tokens/techrity.tokens.json`](design-tokens/techrity.tokens.json) | Colours (light and purple themes), type styles, spacing and radius, each with a usage note |
-| [`design-tokens/techrity.css`](design-tokens/techrity.css) | CSS custom properties `--techrity-*`, theme selectors `[data-techrity-theme="light|purple"]`, and type classes `.techrity-*` |
+| [`design-tokens/techrity.tokens.json`](design-tokens/techrity.tokens.json) | Brand colours (light and purple themes), UI colours and tonal palettes, brand and UI type styles, spacing (including the 8-pt grid) and radius, each with a usage note |
+| [`design-tokens/techrity.css`](design-tokens/techrity.css) | CSS custom properties `--techrity-*`, theme selectors `[data-techrity-theme="light|purple"]`, and type classes `.techrity-*` (including `.techrity-ui-*`) |
 
 ```html
 <link rel="stylesheet" href="design-tokens/techrity.css">
@@ -135,7 +205,8 @@ techrity-brand-system/
 │       └── logomark/            # 64, 128, 256, 512px
 ├── fonts/                       # Font notes (Now is licensed; Poppins fallback)
 ├── design-tokens/               # techrity.tokens.json + techrity.css (--techrity-*)
-├── public/                      # Brand Guidelines V1.0 PDF, palette board, previews/
+├── ui-kit/components/           # Web UI components: techrity-ui.{js,css,d.ts} + one guide per component
+├── public/                      # Brand Guidelines V1.0 PDF, palette board, previews/, ui-kit/ references
 └── brands/                      # Child brands: each mirrors the parent's layout
     ├── tech-for-good/           # T4G: logos, elements, gradients, design-tokens, public
     └── made-for-good/           # M4G: logos, patterns, applications, design-tokens, public
@@ -145,4 +216,4 @@ techrity-brand-system/
 
 ## License
 
-Code and design tokens (`design-tokens/`, `*.css`, `*.tokens.json`) are MIT licensed. Logos, brand marks, guideline PDFs, artwork and photography are © Techrity Innovation Foundation, all rights reserved, and may be used only as their brand guidelines describe. See [LICENSE.md](LICENSE.md).
+Code and design tokens (`design-tokens/`, `ui-kit/components/`, `*.css`, `*.js`, `*.tokens.json`) are MIT licensed. Logos, brand marks, guideline PDFs, artwork and photography are © Techrity Innovation Foundation, all rights reserved, and may be used only as their brand guidelines describe. See [LICENSE.md](LICENSE.md).

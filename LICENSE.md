@@ -4,7 +4,7 @@ This repository mixes two kinds of material under different terms.
 
 ## 1. Code and design tokens: MIT License
 
-Applies to `design-tokens/`, `brands/*/design-tokens/`, and any `.css` or `.tokens.json` file.
+Applies to `design-tokens/`, `ui-kit/components/`, `brands/*/design-tokens/`, and any `.css`, `.js`, `.d.ts` or `.tokens.json` file. The UI kit reference images in `public/ui-kit/` are brand material (section 2).
 
 MIT License
 

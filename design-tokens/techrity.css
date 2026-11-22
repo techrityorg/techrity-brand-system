@@ -16,6 +16,85 @@
   --techrity-lavender-tint: #bfbbda;
   --techrity-black: #000000;
   --techrity-white: #ffffff;
+  --techrity-ui-cyan: #6ce3fa;
+  --techrity-ui-gray: #535252;
+  --techrity-blue-10: #1e3a8a;
+  --techrity-blue-20: #1e40af;
+  --techrity-blue-30: #1d4ed8;
+  --techrity-blue-40: #2563eb;
+  --techrity-blue-50: #3b82f6;
+  --techrity-blue-60: #60a5fa;
+  --techrity-blue-70: #93c5fd;
+  --techrity-blue-80: #bfdbfe;
+  --techrity-blue-90: #dbeafe;
+  --techrity-blue-95: #eff6ff;
+  --techrity-blue-99: #fafcff;
+  --techrity-green-10: #14532d;
+  --techrity-green-20: #166534;
+  --techrity-green-30: #15803d;
+  --techrity-green-40: #19bd56;
+  --techrity-green-50: #1dd862;
+  --techrity-green-60: #44df7d;
+  --techrity-green-70: #78e8a1;
+  --techrity-green-80: #93ebb3;
+  --techrity-green-90: #aef4c7;
+  --techrity-green-95: #dafbe6;
+  --techrity-green-99: #f0fdf4;
+  --techrity-yellow-10: #713f12;
+  --techrity-yellow-20: #854d0e;
+  --techrity-yellow-30: #a16207;
+  --techrity-yellow-40: #ca8a04;
+  --techrity-yellow-50: #eab308;
+  --techrity-yellow-60: #facc15;
+  --techrity-yellow-70: #fde047;
+  --techrity-yellow-80: #fef08a;
+  --techrity-yellow-90: #fef9c3;
+  --techrity-yellow-95: #fef9c3;
+  --techrity-yellow-99: #fefce8;
+  --techrity-orange-10: #7c2d12;
+  --techrity-orange-20: #9a3412;
+  --techrity-orange-30: #c2410c;
+  --techrity-orange-40: #ea580c;
+  --techrity-orange-50: #f97316;
+  --techrity-orange-60: #fb923c;
+  --techrity-orange-70: #fdba74;
+  --techrity-orange-80: #fed7aa;
+  --techrity-orange-90: #ffedd5;
+  --techrity-orange-95: #fff2e0;
+  --techrity-orange-99: #fff7ed;
+  --techrity-red-10: #410e0b;
+  --techrity-red-20: #601410;
+  --techrity-red-30: #8c1d18;
+  --techrity-red-40: #b3261e;
+  --techrity-red-50: #dc362e;
+  --techrity-red-60: #e46962;
+  --techrity-red-70: #ec928e;
+  --techrity-red-80: #f2b8b5;
+  --techrity-red-90: #f9dedc;
+  --techrity-red-95: #fceeee;
+  --techrity-red-99: #fffbf9;
+  --techrity-neutral-10: #1c1b1f;
+  --techrity-neutral-20: #313033;
+  --techrity-neutral-30: #49484c;
+  --techrity-neutral-40: #605d62;
+  --techrity-neutral-50: #787579;
+  --techrity-neutral-60: #939094;
+  --techrity-neutral-70: #aeaaae;
+  --techrity-neutral-80: #c9c5ca;
+  --techrity-neutral-90: #e6e1e5;
+  --techrity-neutral-95: #f4eff4;
+  --techrity-neutral-99: #fffbfe;
+  --techrity-neutral-variant-10: #1d1a22;
+  --techrity-neutral-variant-20: #322f37;
+  --techrity-neutral-variant-30: #49454f;
+  --techrity-neutral-variant-40: #605d66;
+  --techrity-neutral-variant-50: #79747e;
+  --techrity-neutral-variant-60: #938f99;
+  --techrity-neutral-variant-70: #aea9b4;
+  --techrity-neutral-variant-80: #cac4d0;
+  --techrity-neutral-variant-90: #e7e0ec;
+  --techrity-neutral-variant-95: #f5eefa;
+  --techrity-neutral-variant-99: #fffbfe;
 }
 
 [data-techrity-theme="purple"] {
@@ -29,20 +108,42 @@
 
 :root {
   --techrity-font-sans: Now, Poppins, system-ui, sans-serif;
+  --techrity-font-ui: Now, Nunito, Poppins, system-ui, sans-serif;
   --techrity-space-logo-clear: 16px;
   --techrity-space-edge: 75px;
   --techrity-space-slide-margin: 108px;
+  --techrity-grid-1: 8px;
+  --techrity-grid-2: 16px;
+  --techrity-grid-3: 24px;
+  --techrity-grid-4: 32px;
+  --techrity-grid-5: 40px;
+  --techrity-grid-6: 48px;
+  --techrity-grid-8: 64px;
+  --techrity-mobile-status-bar: 24px;
+  --techrity-mobile-nav: 48px;
+  --techrity-mobile-home-indicator: 38px;
   --techrity-radius-square: 0px;
   --techrity-radius-full: 9999px;
+  --techrity-radius-card: 16px;
+  --techrity-radius-control: 8px;
 }
 
-.techrity-display { font-family: var(--techrity-font-sans); font-size: 126px; line-height: 1.02; font-weight: 700; }}
-.techrity-title { font-family: var(--techrity-font-sans); font-size: 94px; line-height: 1.2; font-weight: 700; }}
-.techrity-subtitle { font-family: var(--techrity-font-sans); font-size: 78px; line-height: 1.02; font-weight: 700; }}
-.techrity-body { font-family: var(--techrity-font-sans); font-size: 22px; line-height: 1.4; font-weight: 400; }}
-.techrity-caption { font-family: var(--techrity-font-sans); font-size: 17px; line-height: 1.4; font-weight: 400; }}
-.techrity-print-heading { font-family: var(--techrity-font-sans); font-size: 16px; line-height: 1.4; font-weight: 700; }}
-.techrity-print-body { font-family: var(--techrity-font-sans); font-size: 16px; line-height: 1.4; font-weight: 400; }}
-.techrity-print-footer { font-family: var(--techrity-font-sans); font-size: 15px; line-height: 1.4; font-weight: 400; }}
-.techrity-print-address { font-family: var(--techrity-font-sans); font-size: 11px; line-height: 1.13; font-weight: 400; }}
-.techrity-lockup { font-family: var(--techrity-font-sans); font-size: 30px; line-height: 1.4; font-weight: 700; letter-spacing: 0.175em; }}
+.techrity-display { font-family: var(--techrity-font-sans); font-size: 126px; line-height: 1.02; font-weight: 700; }
+.techrity-title { font-family: var(--techrity-font-sans); font-size: 94px; line-height: 1.2; font-weight: 700; }
+.techrity-subtitle { font-family: var(--techrity-font-sans); font-size: 78px; line-height: 1.02; font-weight: 700; }
+.techrity-body { font-family: var(--techrity-font-sans); font-size: 22px; line-height: 1.4; font-weight: 400; }
+.techrity-caption { font-family: var(--techrity-font-sans); font-size: 17px; line-height: 1.4; font-weight: 400; }
+.techrity-print-heading { font-family: var(--techrity-font-sans); font-size: 16px; line-height: 1.4; font-weight: 700; }
+.techrity-print-body { font-family: var(--techrity-font-sans); font-size: 16px; line-height: 1.4; font-weight: 400; }
+.techrity-print-footer { font-family: var(--techrity-font-sans); font-size: 15px; line-height: 1.4; font-weight: 400; }
+.techrity-print-address { font-family: var(--techrity-font-sans); font-size: 11px; line-height: 1.13; font-weight: 400; }
+.techrity-lockup { font-family: var(--techrity-font-sans); font-size: 30px; line-height: 1.4; font-weight: 700; letter-spacing: 0.175em; }
+.techrity-ui-paragraph-xl { font-family: var(--techrity-font-ui); font-size: 25px; line-height: 1.5; font-weight: 400; }
+.techrity-ui-paragraph-lg { font-family: var(--techrity-font-ui); font-size: 24px; line-height: 1.5; font-weight: 400; }
+.techrity-ui-paragraph-md { font-family: var(--techrity-font-ui); font-size: 22px; line-height: 1.5; font-weight: 400; }
+.techrity-ui-paragraph-md-sm { font-family: var(--techrity-font-ui); font-size: 20px; line-height: 1.5; font-weight: 400; }
+.techrity-ui-paragraph { font-family: var(--techrity-font-ui); font-size: 16px; line-height: 1.6; font-weight: 400; }
+.techrity-ui-paragraph-sm { font-family: var(--techrity-font-ui); font-size: 12.8px; line-height: 1.5; font-weight: 400; }
+.techrity-ui-heading-semibold { font-family: var(--techrity-font-ui); font-size: 24px; line-height: 1.3; font-weight: 600; }
+.techrity-ui-heading-bold { font-family: var(--techrity-font-ui); font-size: 24px; line-height: 1.3; font-weight: 700; }
+.techrity-ui-heading-black { font-family: var(--techrity-font-ui); font-size: 24px; line-height: 1.3; font-weight: 900; }
