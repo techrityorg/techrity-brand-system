@@ -1,5 +1,5 @@
 import type * as React from 'react';
-export type IconName = 'arrow-right' | 'arrow-up-right' | 'caret-down' | 'caret-up' | 'cart' | 'external' | 'x';
+export type IconName = 'arrow-right' | 'arrow-up-right' | 'caret-down' | 'caret-up' | 'cart' | 'external' | 'x' | 'list';
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /** primary = ui-cyan (Donate, Sign Up, Apply Now) · outline = black border (Shop) · purple = brand purple · ghost = soft panel ("Make a Request") · link = text only */
   variant?: 'primary' | 'outline' | 'purple' | 'ghost' | 'link';
@@ -12,7 +12,8 @@ export interface TagProps { active?: boolean; onClick?: () => void; children?: R
 export declare function Tag(props: TagProps): React.ReactElement;
 export interface FilterSelectProps { label?: string; active?: boolean; open?: boolean; onClick?: () => void }
 export declare function FilterSelect(props: FilterSelectProps): React.ReactElement;
-export interface NavBarProps { logoSrc: string; cobrandSrc?: string; cobrandAlt?: string; links?: string[]; dropdowns?: string[]; active?: string; ctaLabel?: string; homeHref?: string }
+export interface NavLink { label: string; href?: string }
+export interface NavBarProps { logoSrc: string; cobrandSrc?: string; cobrandAlt?: string; links?: Array<string | NavLink>; menus?: Record<string, NavLink[]>; active?: string; ctaLabel?: string; ctaHref?: string; shopHref?: string; homeHref?: string; id?: string }
 export declare function NavBar(props: NavBarProps): React.ReactElement;
 export interface PathwayCardProps { index?: string; title: string; description: string; tone?: 'gray' | 'purple'; href?: string }
 export declare function PathwayCard(props: PathwayCardProps): React.ReactElement;

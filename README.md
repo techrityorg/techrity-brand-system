@@ -150,15 +150,15 @@ Their values match Tailwind CSS (blue, green, yellow, orange) and the Material 3
 | Button | [Button.md](ui-kit/components/Button.md) | primary (cyan) · outline · purple · ghost · link, in pill, rounded or square shapes |
 | Tag | [Tag.md](ui-kit/components/Tag.md) | Story and category filter chip |
 | FilterSelect | [FilterSelect.md](ui-kit/components/FilterSelect.md) | "All ▾" dropdown trigger |
-| NavBar | [NavBar.md](ui-kit/components/NavBar.md) | Site header with Shop and Donate, plus an optional T4G co-brand |
+| NavBar | [NavBar.md](ui-kit/components/NavBar.md) | Site header with Shop and Donate, dropdown menus, a menu button below 960px and an optional T4G co-brand |
 | PathwayCard | [PathwayCard.md](ui-kit/components/PathwayCard.md) | Numbered ecosystem entry-point card |
 | StoryCard | [StoryCard.md](ui-kit/components/StoryCard.md) | Participant story with an Impact line |
 
 ```html
 <link rel="stylesheet" href="design-tokens/techrity.css">
 <link rel="stylesheet" href="ui-kit/components/techrity-ui.css">
-<script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="ui-kit/components/techrity-ui.js"></script>
 <script>
   const h = React.createElement, T = window.Techrity;
@@ -166,7 +166,7 @@ Their values match Tailwind CSS (blue, green, yellow, orange) and the Material 3
 </script>
 ```
 
-Typed props are in [`techrity-ui.d.ts`](ui-kit/components/techrity-ui.d.ts). Not built yet: the Project Overview modal and the Dashboard Header (see the reference images).
+The components are built for light surfaces (white and `neutral-95`), as the web UI kit is, and don't follow the purple theme. Typed props are in [`techrity-ui.d.ts`](ui-kit/components/techrity-ui.d.ts). Not built yet: the Project Overview modal and the Dashboard Header (see the reference images).
 
 **Fixes made to the kit**
 - **Missing sizes:** heading sizes and breakpoint widths weren't labelled in the kit, so they're measured from its frames.
@@ -211,6 +211,30 @@ Every brand shares the same six semantic roles (`surface`, `ink`, `heading`, `mu
 
 ---
 
+## Where the System Lives
+
+The brand system exists in three places. Changes flow one way, so they never disagree:
+
+| Place | What it holds | Role |
+|-------|---------------|------|
+| **Claude Design Systems** (Techrity · Tech for Good · Made For Good) | Tokens, guidelines, live component previews and assets | **Source of truth.** Edit tokens and guidance here first |
+| **This repo** | Token JSON and CSS, UI kit code, logo files, guideline PDFs | Code and file distribution, generated from the design systems |
+| **Canva** › *Techrity Design System* folder | Logos, palettes, UI kit references, guidelines as editable designs, plus a subfolder for each child brand | Day-to-day design work for the comms team |
+
+**To change a token:**
+1. Edit it in the brand's Claude Design System.
+2. Export its `tokens.json` and run `python3 scripts/gen_tokens.py <export> <repo tokens.json> <css> <prefix> "<Brand>"`.
+3. Commit the result. The **Check design tokens** workflow (`scripts/check_tokens.py`) blocks the change if:
+   - the CSS doesn't match the tokens
+   - a brand is missing one of the six semantic roles
+   - a text colour fails WCAG AA
+   - a token is missing its usage note
+4. If a logo or palette changed, re-import it into the Canva folder.
+
+The Canva **Brand Kit** (colours, fonts and logo slots) is set by hand in Canva. Keep it in step with the values above.
+
+---
+
 ## Repository Layout
 
 ```
@@ -224,7 +248,8 @@ techrity-brand-system/
 │       ├── lockup/              # 1200px wide
 │       └── logomark/            # 64, 128, 256, 512px
 ├── fonts/                       # Font notes (Now is OFL and free to self-host; Poppins fallback)
-├── scripts/                     # gen_tokens.py: builds every brand's tokens JSON + CSS
+├── scripts/                     # gen_tokens.py builds every brand's tokens JSON + CSS; check_tokens.py verifies them
+├── .github/workflows/           # check-tokens.yml runs check_tokens.py on every token change
 ├── design-tokens/               # techrity.tokens.json + techrity.css (--techrity-*)
 ├── ui-kit/components/           # Web UI components: techrity-ui.{js,css,d.ts} + one guide per component
 ├── public/                      # Brand Guidelines V1.0 PDF, palette board, previews/, ui-kit/ references

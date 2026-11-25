@@ -11,7 +11,8 @@
       'caret-up': 'M48 160l80-80 80 80',
       'cart': 'M24 40h24l32 120h112l24-88H62M96 208a12 12 0 1 0 0.1 0M184 208a12 12 0 1 0 0.1 0',
       'external': 'M216 104V40h-64M136 120l80-80M184 144v64a8 8 0 0 1-8 8H48a8 8 0 0 1-8-8V80a8 8 0 0 1 8-8h64',
-      'x': 'M200 56L56 200M200 200L56 56'
+      'x': 'M200 56L56 200M200 200L56 56',
+      'list': 'M40 128h176M40 64h176M40 192h176'
     };
     return h('svg', { className: cx('tr-icon', props.className), viewBox: '0 0 256 256', width: props.size || 16, height: props.size || 16, 'aria-hidden': 'true', focusable: 'false' },
       h('path', { d: paths[props.name], fill: 'none', stroke: 'currentColor', strokeWidth: 20, strokeLinecap: 'round', strokeLinejoin: 'round' }));
@@ -36,21 +37,36 @@
       h('span', null, props.label || 'All'), h(Icon, { name: props.open ? 'caret-up' : 'caret-down', size: 18 }));
   }
 
+  /* links: strings or { label, href }. menus: { "Get Involved": [{ label, href }] } turns that link into a dropdown. */
   function NavBar(props) {
-    var links = props.links || ['About', 'Get Involved', 'Opportunities', 'Events', 'Blog'];
-    var dropdowns = props.dropdowns || ['Get Involved'];
-    return h('nav', { className: 'tr-nav', 'aria-label': 'Main' },
-      h('a', { className: 'tr-nav-brand', href: props.homeHref || '#' },
-        h('img', { src: props.logoSrc, alt: 'techrity', height: 28 }),
+    var useState = React.useState;
+    var mobileState = useState(false), mobileOpen = mobileState[0], setMobileOpen = mobileState[1];
+    var menuState = useState(null), openMenu = menuState[0], setOpenMenu = menuState[1];
+    var links = (props.links || ['About', 'Get Involved', 'Opportunities', 'Events', 'Blog']).map(function (l) { return typeof l === 'string' ? { label: l, href: '#' } : l; });
+    var menus = props.menus || { 'Get Involved': [{ label: 'Volunteer', href: '#' }, { label: 'Mentor', href: '#' }, { label: 'Partner with us', href: '#' }] };
+    var navId = props.id || 'tr-nav-menu';
+    return h('div', { className: 'tr-nav-wrap' }, h('nav', { className: cx('tr-nav', mobileOpen && 'is-open'), 'aria-label': 'Main' },
+      h('a', { className: 'tr-nav-brand', href: props.homeHref || '/' },
+        h('img', { src: props.logoSrc, alt: 'Techrity home', height: 28 }),
         props.cobrandSrc ? h('span', { className: 'tr-nav-divider', 'aria-hidden': 'true' }) : null,
-        props.cobrandSrc ? h('img', { src: props.cobrandSrc, alt: props.cobrandAlt || 'T4G', height: 28 }) : null),
-      h('ul', { className: 'tr-nav-links' }, links.map(function (l) {
-        return h('li', { key: l }, h('a', { href: '#', className: cx('tr-nav-link', props.active === l && 'is-active'), 'aria-current': props.active === l ? 'page' : undefined },
-          l, dropdowns.indexOf(l) > -1 ? h(Icon, { name: 'caret-down', size: 14 }) : null));
-      })),
-      h('div', { className: 'tr-nav-actions' },
-        h(Button, { variant: 'outline', icon: 'cart' }, 'Shop'),
-        h(Button, { variant: 'primary' }, props.ctaLabel || 'Donate')));
+        props.cobrandSrc ? h('img', { src: props.cobrandSrc, alt: props.cobrandAlt || 'Tech for Good', height: 28 }) : null),
+      h('button', { type: 'button', className: 'tr-nav-toggle', 'aria-expanded': mobileOpen, 'aria-controls': navId, onClick: function () { setMobileOpen(!mobileOpen); } },
+        h(Icon, { name: mobileOpen ? 'x' : 'list', size: 24 }), h('span', { className: 'tr-sr-only' }, mobileOpen ? 'Close menu' : 'Open menu')),
+      h('div', { className: 'tr-nav-panel', id: navId },
+        h('ul', { className: 'tr-nav-links' }, links.map(function (l) {
+          var items = menus[l.label], isActive = props.active === l.label;
+          if (items) {
+            var open = openMenu === l.label;
+            return h('li', { key: l.label, className: 'tr-nav-item' },
+              h('button', { type: 'button', className: cx('tr-nav-link', isActive && 'is-active'), 'aria-expanded': open, onClick: function () { setOpenMenu(open ? null : l.label); } },
+                l.label, h(Icon, { name: open ? 'caret-up' : 'caret-down', size: 14 })),
+              open ? h('ul', { className: 'tr-nav-menu' }, items.map(function (it) { return h('li', { key: it.label }, h('a', { href: it.href || '#' }, it.label)); })) : null);
+          }
+          return h('li', { key: l.label, className: 'tr-nav-item' }, h('a', { href: l.href || '#', className: cx('tr-nav-link', isActive && 'is-active'), 'aria-current': isActive ? 'page' : undefined }, l.label));
+        })),
+        h('div', { className: 'tr-nav-actions' },
+          h(Button, { variant: 'outline', icon: 'cart', href: props.shopHref || '#' }, 'Shop'),
+          h(Button, { variant: 'primary', href: props.ctaHref || '#' }, props.ctaLabel || 'Donate')))));
   }
 
   function PathwayCard(props) {

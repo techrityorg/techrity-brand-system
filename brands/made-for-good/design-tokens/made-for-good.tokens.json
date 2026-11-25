@@ -4,7 +4,7 @@
   "prefix": "m4g",
   "parent": "techrity",
   "name": "Made For Good",
-  "version": 4,
+  "version": 5,
   "meta": {
     "source": "Made For Good Brand Guidelines v1.0 (2025, slides uploaded) + MerchByTechrity's New Brand Identity + Made4Good Messaging",
     "parent": "Techrity design system: https://claude.ai/artifact/6Ytk6HJySWm3C1p881jWZu",
@@ -370,35 +370,40 @@
             "fontSize": "16px",
             "lineHeight": 1.4,
             "fontWeight": 300,
-            "sample": "Light (300): body text"
+            "sample": "Do Good. Be Good. Wear Good.",
+            "usage": "Manrope Light (300): long-form captions and quiet supporting copy on large formats."
           },
           {
             "name": "body-regular",
             "fontSize": "16px",
             "lineHeight": 1.4,
             "fontWeight": 400,
-            "sample": "Regular (400): body text"
+            "sample": "Every techie is MADE, and MADE FOR GOOD.",
+            "usage": "Manrope Regular (400): default body text for posts, merch tags and the newsletter."
           },
           {
             "name": "heading-medium",
             "fontSize": "24px",
             "lineHeight": 1.2,
             "fontWeight": 500,
-            "sample": "Medium (500): headings"
+            "sample": "The MadeSeries",
+            "usage": "Manrope Medium (500): small headings, labels and navigation."
           },
           {
             "name": "heading-semibold",
             "fontSize": "24px",
             "lineHeight": 1.2,
             "fontWeight": 600,
-            "sample": "Semi-Bold (600): headings"
+            "sample": "Project 100: 1 Techie, 1 Laptop",
+            "usage": "Manrope Semi-Bold (600): sub-headlines and card titles."
           },
           {
             "name": "heading-bold",
             "fontSize": "24px",
             "lineHeight": 1.2,
             "fontWeight": 700,
-            "sample": "Bold (700): headings"
+            "sample": "Made Stars. Made Champs.",
+            "usage": "Manrope Bold (700): emphasis within body and short calls to action. Headlines stay in Moderniz."
           }
         ]
       }
