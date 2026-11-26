@@ -5,3 +5,9 @@ node_modules/
 # Python
 __pycache__/
 *.pyc
+
+# Licensed Techrity font files (FF Mark Pro) must never be committed to this public repo
+fonts/**/*.otf
+fonts/**/*.ttf
+fonts/**/*.woff
+fonts/**/*.woff2

@@ -107,7 +107,7 @@
 }
 
 :root {
-  --techrity-font-sans: Now, Poppins, system-ui, sans-serif;
+  --techrity-font-sans: "Mark Pro", "FF Mark Pro", Poppins, system-ui, sans-serif;
   --techrity-space-logo-clear: 16px;
   --techrity-space-edge: 75px;
   --techrity-space-slide-margin: 108px;

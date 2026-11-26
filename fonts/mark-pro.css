@@ -1,0 +1,29 @@
+/* FF Mark Pro: @font-face declarations for Techrity.
+ *
+ * Mark Pro is a commercial FontFont typeface. Its font files are NOT in this public repo.
+ * - Machines with Mark Pro installed (the licensed OTFs) load it through local() with nothing else needed.
+ * - To self-host on a website you need a FontFont WEB licence. Put that licence's WOFF2 files in fonts/web/
+ *   on your web server (never commit them here: .gitignore blocks them) with these file names.
+ * - Load this file before design-tokens/techrity.css. Everywhere else, the stack falls back to Poppins.
+ * Weight classes follow the font files: there is no 600; Hairline 250, Thin 275, Light 350, Book 450. */
+
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Hairline"), local("MarkPro-Hairline"), url("web/MarkPro-Hairline.woff2") format("woff2"); font-weight: 250; font-style: normal; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Hairline Italic"), local("MarkPro-HairlineItalic"), url("web/MarkPro-HairlineItalic.woff2") format("woff2"); font-weight: 250; font-style: italic; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Thin"), local("MarkPro-Thin"), url("web/MarkPro-Thin.woff2") format("woff2"); font-weight: 275; font-style: normal; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Thin Italic"), local("MarkPro-ThinItalic"), url("web/MarkPro-ThinItalic.woff2") format("woff2"); font-weight: 275; font-style: italic; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Extra Light"), local("MarkPro-ExtraLight"), url("web/MarkPro-ExtraLight.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Extra Light Italic"), local("MarkPro-ExtraLightItalic"), url("web/MarkPro-ExtraLightItalic.woff2") format("woff2"); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Light"), local("MarkPro-Light"), url("web/MarkPro-Light.woff2") format("woff2"); font-weight: 350; font-style: normal; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Light Italic"), local("MarkPro-LightItalic"), url("web/MarkPro-LightItalic.woff2") format("woff2"); font-weight: 350; font-style: italic; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Regular"), local("MarkPro"), url("web/MarkPro.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Italic"), local("MarkPro-Italic"), url("web/MarkPro-Italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Book"), local("MarkPro-Book"), url("web/MarkPro-Book.woff2") format("woff2"); font-weight: 450; font-style: normal; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Book Italic"), local("MarkPro-BookItalic"), url("web/MarkPro-BookItalic.woff2") format("woff2"); font-weight: 450; font-style: italic; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Medium"), local("MarkPro-Medium"), url("web/MarkPro-Medium.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Medium Italic"), local("MarkPro-MediumItalic"), url("web/MarkPro-MediumItalic.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Bold"), local("MarkPro-Bold"), url("web/MarkPro-Bold.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Bold Italic"), local("MarkPro-BoldItalic"), url("web/MarkPro-BoldItalic.woff2") format("woff2"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Heavy"), local("MarkPro-Heavy"), url("web/MarkPro-Heavy.woff2") format("woff2"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Heavy Italic"), local("MarkPro-HeavyItalic"), url("web/MarkPro-HeavyItalic.woff2") format("woff2"); font-weight: 800; font-style: italic; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Black"), local("MarkPro-Black"), url("web/MarkPro-Black.woff2") format("woff2"); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Mark Pro"; src: local("Mark Pro Black Italic"), local("MarkPro-BlackItalic"), url("web/MarkPro-BlackItalic.woff2") format("woff2"); font-weight: 900; font-style: italic; font-display: swap; }

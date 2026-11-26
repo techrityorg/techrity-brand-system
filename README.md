@@ -85,8 +85,10 @@ The four primary colours plus white, from the Techrity Style Guide V1.0. Black i
 
 | Font | Use Case | Source |
 |------|----------|--------|
-| **Now** | The official typeface for brand, print **and web/product UI** | Open source ([SIL OFL 1.1](https://openfontlicense.org), Alfredo Marco Pradil), so it's free to self-host. Files go in [fonts/](fonts/) |
-| **Poppins** | Fallback wherever Now isn't installed; used across current decks and social designs | [Google Fonts](https://fonts.google.com/specimen/Poppins) |
+| **FF Mark Pro** (`"Mark Pro"`) | The official typeface for brand, print **and web/product UI**. It replaces Now, which Brand Guide V1.0 specified | Commercial (FontFont). Licensed files are **not** in this repo; see [fonts/](fonts/) |
+| **Poppins** | Fallback wherever Mark Pro isn't installed; used across current decks and social designs | [Google Fonts](https://fonts.google.com/specimen/Poppins) |
+
+Mark Pro weights: Hairline 250 · Thin 275 · ExtraLight 300 · Light 350 · Regular 400 · Book 450 · Medium 500 · Bold 700 · Heavy 800 · Black 900, each with an italic, and no 600. Load [`fonts/mark-pro.css`](fonts/mark-pro.css) before `design-tokens/techrity.css`.
 
 The style guide's hierarchy sets tracking at 0 everywhere, with leading of **Headline 52pt · Subtitle 21pt · Body 12pt**. On 1920 × 1080 slides, body text is 22px and never smaller than 17px.
 
@@ -120,7 +122,7 @@ Their values match Tailwind CSS (blue, green, yellow, orange) and the Material 3
 
 ### UI Type, Grid and Icons
 
-- **Typeface:** **Now**, the same family as the brand (`--techrity-font-sans`: `Now, Poppins, system-ui`).
+- **Typeface:** **FF Mark Pro**, the same family as the brand (`--techrity-font-sans`: `"Mark Pro", "FF Mark Pro", Poppins, system-ui`).
 
 | Level | Desktop | Mobile (< 744px) | Class |
 |-------|---------|------------------|-------|
@@ -132,7 +134,7 @@ Their values match Tailwind CSS (blue, green, yellow, orange) and the Material 3
 | H6 | 16px | 16px | `.techrity-ui-h6` |
 
   - Headings are Bold by default, with Black (900) for emphasis. The `.techrity-ui-h*` classes switch to the mobile sizes on their own below 744px.
-  - **Weights:** Now has Thin, Light, Regular, Medium, Bold and Black, with **no Semi-Bold**. The kit's Semi-Bold column maps to Medium (500) or Bold (700), and the components use Bold.
+  - **Weights:** Mark Pro has ten weights, but **no Semi-Bold**. The kit's Semi-Bold column maps to Medium (500) or Bold (700), and the components use Bold.
   - Desktop sizes are measured from the 1× kit export and rounded. The mobile scale is a recommendation, because the kit leaves it open.
 - **Body scale:** 25 · 24 · 22 · 20 · **16 (default)** · 12.8px (`.techrity-ui-paragraph-*`). Keep UI text on these steps, so no 14px.
 - **Grid:** an **8-point grid** with **12 columns** (`--techrity-grid-1…8`, 8–64px).
@@ -247,7 +249,7 @@ techrity-brand-system/
 │   └── png/
 │       ├── lockup/              # 1200px wide
 │       └── logomark/            # 64, 128, 256, 512px
-├── fonts/                       # Font notes (Now is OFL and free to self-host; Poppins fallback)
+├── fonts/                       # Font notes + mark-pro.css (@font-face for FF Mark Pro; licensed files stay out of the repo)
 ├── scripts/                     # gen_tokens.py builds every brand's tokens JSON + CSS; check_tokens.py verifies them
 ├── .github/workflows/           # check-tokens.yml runs check_tokens.py on every token change
 ├── design-tokens/               # techrity.tokens.json + techrity.css (--techrity-*)
